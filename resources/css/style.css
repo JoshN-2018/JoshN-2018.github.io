@@ -173,7 +173,7 @@ nav .logo img {
 }
 
 .hero-text .hero {
-   margin-bottom: var(--space-petit);
+   margin-bottom: var(--space-small);
 }
 
 .indicator-recent-work {
@@ -650,7 +650,7 @@ footer .social-icons img {
 }
 
 .color-block-comp .mobile-first {
-   max-width: 1700px;
+   max-width: 2600px;
 }
 
 .color-block-comp {
@@ -734,7 +734,7 @@ footer .social-icons img {
    /* mobile first component */
    .color-block-comp .case-text.region-ml {
       display: initial;
-      margin-top: 15.5rem;
+      margin-top: 19rem;
       padding-right: 3.75rem;
    }
 
@@ -745,6 +745,10 @@ footer .social-icons img {
    .case .case-text.region-s {
       display: none;
    }
+   .color-block-comp .mobile-first img {
+      height: 800px;
+   }
+
    /* end of: mobile first component */
 
    .case .case-image.crop {
@@ -814,13 +818,31 @@ footer .social-icons img {
 /* mobile first component */
 @media (min-width: 1320px) {
    .mobile-first {
-      padding: 0 200px;
+      padding: 0 100px;
    }
 }
 
 @media (min-width: 1700px) {
-   .color-block {
-      display: none;
+   .mobile-first {
+      padding: 0 200px;
+   }
+}
+
+@media (min-width: 1945px) {
+   .mobile-first {
+      padding: 0 300px;
+   }
+}
+
+@media (min-width: 2200px) {
+   .mobile-first {
+      padding: 0 450px;
+   }
+}
+
+@media (min-width: 2400px) {
+   .mobile-first {
+      padding: 0 600px;
    }
 }
 /* end of mobile first component */
