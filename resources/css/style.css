@@ -871,6 +871,10 @@ footer .social-icons img {
    box-shadow: var(--shadow-soft);
 }
 
+.exp video {
+   width: 100% !important;
+}
+
 .exp .exp-text {
    margin-top: var(--space-petit);
 }
@@ -891,13 +895,17 @@ footer .social-icons img {
    margin-left: var(--space-std);
 }
 
+.exp-icons img {
+   height: 2.2rem;
+}
+
 .exp-comp {
    margin-bottom: var(--space-med);
 }
 
 /* Experiments */
    /* region medium */
-@media (min-width: 720px) {
+@media (min-width: 850px) {
    .exp .container-flex {
       flex-direction: row;
    }
@@ -921,6 +929,48 @@ footer .social-icons img {
 
    .exp-text hr {
       margin: var(--space-petit) 0;
+   }
+
+   .exp .h4 {
+      margin-bottom: var(--space-micro);
+   }
+
+   .exp-icons img {
+      height: 2.5rem;
+      margin: -0.5rem 0;
+   }
+
+}
+
+   /* region large */
+@media (min-width: 1100px) {
+   .exp .exp-text {
+      width: 35%;
+      margin-right: var(--space-medium);
+      margin-top: 0;
+   }
+
+
+   .exp-comp {
+      margin-bottom: var(--space-larger);
+      padding: 0 var(--indent-2-col);
+   }
+
+   .exp-text h2 {
+      margin-bottom: var(--space-tiny);
+   }
+
+   .exp-text hr {
+      margin: var(--space-petit) 0;
+   }
+
+   .exp .h4 {
+      margin-bottom: var(--space-micro);
+   }
+
+   .exp-icons img {
+      height: 2.5rem;
+      margin: -0.5rem 0;
    }
 
 }
