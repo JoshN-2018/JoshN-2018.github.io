@@ -999,14 +999,59 @@ footer .social-icons img {
 
 /* Contact page */
    /* region small */
+.contact .sidekick {
+   margin-bottom: var(--space-tiny);
+}
+.skills .container-flex {
+   flex-direction: column;
+}
+
+.skills hr {
+   margin: var(--space-small) 0;
+   border-color: var(--color-black);
+}
+
+.skills h3 {
+   margin-bottom: var(--space-tiny);
+}
+
+.skills-intro {
+   margin-bottom: var(--space-small);
+}
+
+.skills-area .body-lead {
+   border-bottom: 1px solid var(--color-black);
+   margin-bottom: var(--space-tiny);
+   line-height: 2;
+}
+
+.skills-area .body-lead {
+   border-bottom: 1px solid var(--color-black);
+}
+
+.skills-details {
+   margin-top: var(--space-small);
+}
+
+
+
 
    /* region medium */
 @media (min-width: 720px) {
-
+   .skills-right, .skills-left {
+      width: 50%;
+   }
 }
 
 /* region large */
 @media (min-width: 1100px) {
+   .contact .hero-text {
+      width: 54%;
+   }
+
+   .contact .sidekick {
+      margin-bottom: var(--space-small);
+   }
 }
 
 

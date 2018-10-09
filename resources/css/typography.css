@@ -65,7 +65,7 @@ strong,
 
 .body-block {
    font-size: 1.42rem; /* 28px */
-   line-height: 1.57;
+   line-height: 1.8;
 }
 
 .body-big {
@@ -86,6 +86,14 @@ strong,
 .body-petit {
    font-size: 0.813rem; /* 13px */
    line-height: 2.4;
+}
+
+.credit {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: var(--color-light-grey);
+   line-height: 2;
+   font-size: 0.8rem;
 }
 
 .nav {
@@ -134,7 +142,7 @@ a {
 
    .body-block {
       font-size: 1.58rem; /* 28px */
-      line-height: 1.57;
+      line-height: 1.8;
    }
 
    .body-big {
@@ -194,7 +202,7 @@ a {
 
    .body-block {
       font-size: 1.75rem; /* 28px */
-      line-height: 1.57;
+      line-height: 1.8;
    }
 
    .body-big {
