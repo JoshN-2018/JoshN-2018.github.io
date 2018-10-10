@@ -1043,6 +1043,39 @@ footer .social-icons img {
    margin-bottom: var(--space-medium);
 }
 
+   /* hero-contact */
+.hero-contact {
+   margin-top: var(--space-small);
+}
+
+.hero-contact h4 {
+   border-bottom: 1px solid var(--color-black);
+   line-height: 2;
+   /* margin-top: var(--space-large); */
+}
+
+.hero-contact p {
+   line-height: 1.6;
+}
+
+.hero-contact h4:nth-child(3) {
+   margin-top: var(--space-tiny);
+   margin-bottom: 0;
+   border-bottom: none;
+}
+
+.hero-contact hr {
+   margin-bottom: 0.75rem;
+   border-color: var(--color-black);
+   border-width: 0.5px;
+}
+
+.hero-content {
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
    /* region medium */
 @media (min-width: 720px) {
    .skills .container-flex {
