@@ -924,6 +924,11 @@ footer .social-icons img {
    margin-bottom: var(--space-medium);
 }
 
+.case .elk-mark img {
+   max-height: 15rem;
+}
+
+
 
 /* region proxy-medium */
 @media (min-width: 500px) {
