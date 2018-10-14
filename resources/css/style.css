@@ -896,14 +896,35 @@ footer .social-icons img {
    margin-bottom: var(--space-std);
    width: 100%;
    min-height: 300px;
+   max-height: 300px;
+}
+
+.case .image-block img.collapse {
+   display: none;
+}
+
+.case .elk-assets div {
+   padding: 0 var(--space-small);
+}
+
+.case .elk-assets .h4 {
+   margin-bottom: var(--space-small);
+}
+
+.case .elk-assets .elk-mark .arrow {
+   padding: 0 35%;
+}
+
+.case .elk-assets .elk-mark:first-child {
+   margin-bottom: var(--space-medium);
 }
 
 
-/* region large */
+/* region proxy-medium */
 @media (min-width: 500px) {
    .case .image-block .image-row {
       margin-left: -1rem;
-      }
+   }
 
    .case .image-block .image-row img {
       max-height: 600px;
@@ -911,6 +932,14 @@ footer .social-icons img {
       width: initial;
    }
 }
+
+/* region medium */
+@media (min-width: 720px) {
+   .case .image-block img.collapse {
+      display: initial;
+   }
+}
+
 
 
 
