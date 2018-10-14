@@ -226,28 +226,35 @@
             </p>
          </div>
 
+         <!-- forms images -->
          <div class="case-image">
-            <!-- <img src="../resources/images/oxy-image-content-optimized@1x.png"
-                  srcset="../resources/images/oxy-image-content-optimized@2x.png 2640w,
-                         ../resources/images/oxy-image-content-optimized@1x.png 1320w"
-                  sizes="(min-width: 1320px) 1320px, 100vw"
-                  alt="form design"/> -->
-            <img src="../resources/images/oxy-image-forms@2x.png" alt="forms">
+            <div class="oxy-form container-flex">
+
+               <picture>
+                  <source media="(min-width: 721px)"
+                  srcset="../resources/images/oxy-image-forms-m-l.svg"/>
+                  <source media="(max-width: 720px)"
+                  srcset="../resources/images/oxy-image-forms-s.svg"/>
+                  <img src="../resources/images/oxy-image-forms-s.svg" alt="forms"/>
+               </picture>
+
+               <div class="form-vid-cont">
+                  <h4 class="h4 bold">Inline validation</h4>
+                  <div class="container-flex form-vids">
+                     <video width="100" height="100" muted loop autoplay>
+                        <source src="../resources/video/oxy-video-form-tick.mp4" type="video/mp4">
+                     </video>
+                     <video width="100" height="100" muted loop autoplay>
+                        <source src="../resources/video/oxy-video-form-cross.mp4" type="video/mp4">
+                     </video>
+                  </div>
+                  <hr>
+               </div>
+               
+            </div>
          </div>
 
          <!-- Inline form videos -->
-         <div class="form-vid-cont">
-            <h4 class="h4 bold">Inline validation</h4>
-            <div class="container-flex form-vids">
-               <video width="100" height="100" muted loop autoplay>
-                  <source src="../resources/video/oxy-video-form-tick.mp4" type="video/mp4">
-               </video>
-               <video width="100" height="100" muted loop autoplay>
-                  <source src="../resources/video/oxy-video-form-cross.mp4" type="video/mp4">
-               </video>
-            </div>
-                  <hr>
-         </div>
 
          <!-- Designed to scale -->
          <div class="case-text">

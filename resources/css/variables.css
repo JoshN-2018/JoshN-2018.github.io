@@ -35,6 +35,39 @@
 /* Global structure elements */
 
 
+/* Flex wrapper */
+   /* regions-ALL */
+.container-flex {
+  display: flex;
+}
+/* end of: Document flex wrapper */
+
+
+/* Margins wrapper */
+
+  /* region small */
+.container {
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  overflow: hidden;
+  max-width: 1440px;
+  position: relative;
+}
+
+  /* region medium */
+@media (min-width: 720px) {
+  .container {
+     padding: 0 2.5rem;
+  }
+}
+
+/* region large */
+@media (min-width: 1100px) {
+   .container {
+     padding: 0 3.75rem;
+   }
+}
+/* end of: Margins wrapper */
 
 /* Interactive elements */
 
@@ -201,38 +234,6 @@ footer h4:hover {
 
 
 
-/* Flex wrapper */
-   /* regions-ALL */
-.container-flex {
-  display: flex;
-}
-/* end of: Document flex wrapper */
-
-
-/* Margins wrapper */
-
-  /* region small */
-.container {
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  overflow: hidden;
-  max-width: 1440px;
-}
-
-  /* region medium */
-@media (min-width: 720px) {
-  .container {
-     padding: 0 2.5rem;
-  }
-}
-
-/* region large */
-@media (min-width: 1100px) {
-   .container {
-     padding: 0 3.75rem;
-   }
-}
-/* end of: Margins wrapper */
 
 
 

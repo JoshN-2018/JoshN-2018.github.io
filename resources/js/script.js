@@ -17,7 +17,7 @@ function off() {
 
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {stickFunction()};
+// window.onscroll = function() {stickFunction()};
 
 // Get the header
 var header = document.getElementById("sticky-contact");
@@ -33,7 +33,7 @@ var sticky = header.offsetTop;
 
 // Get the header again – don't know why!
 var stickyPosition = document.getElementById("sticky-contact");
-// var navWidth = document.getElementsByTagName("sticky-contact").offsetWidth;
+var navWidth = document.getElementsByTagName("sticky-contact").offsetWidth;
 
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
