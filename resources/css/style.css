@@ -906,11 +906,11 @@ footer .social-icons img {
 /* mobile first component extra adjustments */
 @media (min-width: 1320px) {
    .mobile-first {
-      padding: 0 200px;
+      padding: 0 100px;
    }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1500px) {
    .mobile-first {
       padding: 0 200px;
    }
@@ -1135,8 +1135,9 @@ footer .social-icons img {
 /* Experiments */
    /* region medium */
 @media (min-width: 850px) {
-   .exp .container-flex {
+   .exp .container-flex.exp-comp {
       flex-direction: row;
+      justify-content: space-between;
    }
    .exp .exp-text {
       width: 40%;
@@ -1174,7 +1175,7 @@ footer .social-icons img {
    /* region large */
 @media (min-width: 1100px) {
    .exp .exp-text {
-      width: 35%;
+      max-width: 25%;
       margin-right: var(--space-medium);
       margin-top: 0;
    }
