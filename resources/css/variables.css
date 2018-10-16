@@ -79,7 +79,13 @@ body {
 
 .sticky-contact img {
    height: 9.25rem;
+   transition: 0.5s all ease;
 }
+   /* trying to get the colours to flip on hover */
+/* .sticky-contact img:hover {
+   background-color: var(--color-black);
+   fill: var(--color-white) !important;
+} */
 
 @media (min-width: 720px) {
    .sticky-contact img {
