@@ -89,8 +89,26 @@ nav div.container-flex {
    margin: 0 auto;
 }
 
-nav ul .link-collapsible {
+.link-collapsible {
    display: none;
+}
+
+#icon-contact img {
+   margin-left: 0.5rem;
+   margin-right: -0.5rem;
+   margin-top: 0.25rem;
+}
+
+nav #icon-contact img {
+   height: 2rem;
+}
+
+/* this is the class we add with js */
+.sticky {
+   position: fixed;
+   top: 0;
+   right: 1.25rem;
+   z-index: 2;
 }
 
 nav .logo {
@@ -101,18 +119,23 @@ nav .logo img {
    height: 0.9rem;
 }
 
+
    /* region medium */
 @media (min-width: 720px) {
    nav div.container-flex {
-   padding-top: 1.5rem;
+      padding-top: 1.5rem;
    }
 
-   nav ul .link-collapsible {
-   display: inline;
+   .link-collapsible {
+      display: initial;
    }
 
-   nav ul li{
-   margin-left: 3.25rem;
+   nav #icon-contact {
+      display: none;
+   }
+
+   nav ul li {
+      margin-left: 3.25rem;
    }
 }
 

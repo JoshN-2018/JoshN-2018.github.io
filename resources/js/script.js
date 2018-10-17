@@ -11,3 +11,22 @@ function off() {
     document.getElementById("menu-button-off").style.display = "none";
      document.getElementById("menu-button").style.display = "block";
 }
+
+
+// Mobile sticky header
+
+window.onscroll = function() {stickyFunction()};
+
+// Get the header
+var header = document.getElementById("icon-contact");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+function stickyFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}

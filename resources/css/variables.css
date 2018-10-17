@@ -81,6 +81,10 @@ body {
    height: 9.25rem;
    transition: 0.5s all ease;
 }
+
+/* .sticky-contact svg path {
+   fill: #CCC !important;
+} */
    /* trying to get the colours to flip on hover */
 /* .sticky-contact img:hover {
    background-color: var(--color-black);
