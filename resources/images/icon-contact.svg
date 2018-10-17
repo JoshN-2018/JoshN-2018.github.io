@@ -1,6 +1,10 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <title>indicator-sticky-contact</title>
-  <g id="speech-buble">
-    <polygon id="Fill-1" points="5.903 8.216 5.903 21.387 9.842 21.387 9.842 27.117 16.416 21.661 26.097 21.661 26.097 8.216 5.903 8.216" fill="#222"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.194 18.901">
+  <title>Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="speech-buble">
+        <polygon id="Fill-1" points="0 0 0 13.171 3.939 13.171 3.939 18.901 10.513 13.445 20.194 13.445 20.194 0 0 0" fill="#222"/>
+      </g>
+    </g>
   </g>
 </svg>

@@ -89,25 +89,35 @@ nav div.container-flex {
    margin: 0 auto;
 }
 
+nav .container {
+   padding-right: 0;
+}
+
 .link-collapsible {
    display: none;
 }
+#icon-contact {
+   background-color: var(--color-white);
+   padding: 0.5rem 1.25rem 0.25rem 0.5rem;
+   margin-top: -0.75rem;
+   display: flex;
+   align-items: flex-start;
+}
 
 #icon-contact img {
-   margin-left: 0.5rem;
-   margin-right: -0.5rem;
-   margin-top: 0.25rem;
+   margin-left: 1rem;
+   /* margin-right: -0.5rem; */
+   /* margin-top: 0.25rem; */
 }
 
 nav #icon-contact img {
-   height: 2rem;
+   height: 1.25rem;
 }
 
 /* this is the class we add with js */
 .sticky {
    position: fixed;
-   top: 0;
-   right: 1.25rem;
+   right: 0;
    z-index: 2;
 }
 
@@ -125,6 +135,10 @@ nav .logo img {
    nav div.container-flex {
       padding-top: 1.5rem;
    }
+
+   /* nav .container {
+      padding-right: 0;
+   } */
 
    .link-collapsible {
       display: initial;
