@@ -67,7 +67,7 @@ body {
    padding-top: calc(100vh - 190px);
    position: sticky;
    position: -webkit-sticky;
-   /* this is the position at which sticky ness occurs */
+   /* this is the position at which stickyness occurs */
    top: calc(-100vh + 220px);
 }
 
@@ -82,8 +82,8 @@ body {
    transition: 0.5s all ease;
 }
 
-/* .sticky-contact svg path {
-   fill: #CCC !important;
+/* .sticky-contact {
+   fill: #CCC;
 } */
    /* trying to get the colours to flip on hover */
 /* .sticky-contact img:hover {

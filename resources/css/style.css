@@ -96,16 +96,19 @@ nav .container {
 .link-collapsible {
    display: none;
 }
+
+
 #icon-contact {
    background-color: var(--color-white);
-   padding: 0.5rem 1.25rem 0.25rem 0.5rem;
+   padding: 1rem 1.25rem 0.25rem 0.5rem;
    margin-top: -0.75rem;
-   display: flex;
-   align-items: flex-start;
+   width: 100%;
+   transition: 0.5s all ease;
 }
 
 #icon-contact img {
    margin-left: 1rem;
+   fill: red;
    /* margin-right: -0.5rem; */
    /* margin-top: 0.25rem; */
 }
@@ -114,11 +117,26 @@ nav #icon-contact img {
    height: 1.25rem;
 }
 
+#stick-icon-cont {
+   padding-top: 0.15rem;
+   transition: 0.3s all ease;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-end;
+}
+
 /* this is the class we add with js */
 .sticky {
    position: fixed;
    right: 0;
    z-index: 2;
+   height: 45px;
+   background-color: var(--color-blue-sky) !important;
+   /* justify-content: center !important; */
+}
+
+.shift {
+   transform: translate(calc(-50vw + 74px)) !important;
 }
 
 nav .logo {
