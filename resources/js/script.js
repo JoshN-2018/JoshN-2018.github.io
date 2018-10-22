@@ -26,10 +26,10 @@ var sticky = header.offsetTop;
 
 function stickyFunction() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+    header.classList.add("stickyM");
     content.classList.add("shift");
   } else {
-    header.classList.remove("sticky");
+    header.classList.remove("stickyM");
     content.classList.remove("shift");
   }
 }
