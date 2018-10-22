@@ -19,6 +19,7 @@
 <body>
 
 <!-- sticky menu set-up -->
+<section id="index-wrapper">
 <section id="content">
 
 
@@ -39,6 +40,7 @@
    </div>
 
 
+
 <!-- Button-overlay -->
 
    <div onclick="on()" id="menu-button">
@@ -49,10 +51,11 @@
    </div>
 
 
+
 <!-- App-header -->
 
    <nav>
-      <div class="container-flex container">
+      <div class="container-flex container-index">
          <div class="logo">
             <a href="index.html"> <!-- link back to home -->
             <img src="resources/images/logo-jn.svg" alt="logo">
@@ -63,6 +66,7 @@
             <li class="link-collapsible strike"><a href="experiments/exp.html">Experiments</a></li>
             <li class="link-collapsible strike"><a href="contact/contact.html">Contact</a></li>
          </ul>
+         <!-- small sticky header -->
          <div id="icon-contact">
             <div id="stick-icon-cont">
                <span class="strike"><a href="contact/contact.html">Contact</a></span>
@@ -76,41 +80,33 @@
 
 
 
-
 <!-- Hero-section -->
 
-   <section class="hero-section" id="hero-block">
-         <div class="container container-flex">
+<section class="hero-section" id="hero-block">
+      <div class="container container-flex">
 
-            <div class="container-flex hero-content">
-               <div class="hero-text">
-                  <p class="hero">Telling <br> stories worth listening to.</p>
-               </div>
+         <div class="container-flex hero-content">
+            <div class="hero-text">
+               <p class="hero">Telling <br> stories worth listening to.</p>
             </div>
-
-            <div class="container-flex indicators">
-               <div class="indicator-recent-work">
-                  <p class="h4 bold">recent work</p>
-                  <img src="resources/images/icon-carrot.svg" alt="carot">
-               </div>
-
-            </div>
-
          </div>
-   </section>
 
-   <!-- <div class="container-flex-end" id="container-case-stick">
-      <div id="sticky-contact">
-         <a href="contact/contact.html">
-            <img src="resources/images/indicator-sticky-contact.svg" alt="contact">
-         </a>
+         <div class="container-flex indicators">
+            <div class="indicator-recent-work">
+               <p class="h4 bold">recent work</p>
+               <img src="resources/images/icon-carrot.svg" alt="carot">
+            </div>
+         </div>
+
       </div>
-   </div> -->
+</section>
+
+
 
 <!-- Showcase-section -->
 
    <section class="showcase-section">
-      <div class="container">
+      <div class="container-index">
          <div class="container-flex">
 
             <div class="showcase-left">
@@ -164,10 +160,11 @@
    </section>
 
 
+
 <!-- Footer -->
 
    <footer>
-      <div class="container">
+      <div class="container-index">
          <div class="container-flex wrapper">
 
             <div class="logo-region-m-l">
@@ -210,11 +207,11 @@
    </footer>
 
 
+
 <!-- js -->
 <script type="text/javascript" src="./resources/js/script.js"></script>
 
 </section> <!-- end of content wrapper -->
-
 <div id="sticky-track">
    <div class="sticky-contact">
       <a href="contact/contact.html">
@@ -222,6 +219,8 @@
       </a>
    </div>
 </div>
+</section> <!-- end of index wrapper -->
+
 
 </body>
 </html>

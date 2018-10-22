@@ -18,9 +18,6 @@
 </head>
 <body>
 
-<!-- sticky menu set-up -->
-<section id="content">
-
 
 
 <!-- Menu-overlay -->
@@ -38,14 +35,23 @@
 
    </div>
 
-
-<!-- Button-overlay -->
-
+   <!-- Button-overlay -->
    <div onclick="on()" id="menu-button">
       <img src="../resources/images/icon-menu.svg" alt="menu">
    </div>
    <div onclick="off()" id="menu-button-off">
       <img src="../resources/images/icon-menu-cross.svg" alt="menu">
+   </div>
+
+
+<!-- Sticky Header -->
+
+   <div class="container-flex-end" id="container-case-stick">
+      <div id="sticky-contact">
+         <a href="../contact/contact.html">
+            <img src="../resources/images/indicator-sticky-contact.svg" alt="contact">
+         </a>
+      </div>
    </div>
 
 
@@ -61,8 +67,16 @@
          <ul class="container-flex nav">
             <li class="link-collapsible strike"><a href="../index.html">Projects</a></li>
             <li class="link-collapsible strike"><a href="../experiments/exp.html">Experiments</a></li>
-            <li class="strike"><a href="../contact/contact.html">Contact</a></li>
+            <li class="link-collapsible strike"><a href="../contact/contact.html">Contact</a></li>
          </ul>
+         <div id="icon-contact">
+            <div id="stick-icon-cont">
+               <span class="strike"><a href="../contact/contact.html">Contact</a></span>
+               <a href="../contact/contact.html">
+                  <img src="../resources/images/icon-contact.svg" alt="contact">
+               </a>
+            </div>
+         </div>
       </div>
    </nav>
 
@@ -307,15 +321,6 @@
 <!-- js -->
 <script type="text/javascript" src="../resources/js/script.js"></script>
 
-</section> <!-- end of content wrapper -->
-
-<div id="sticky-track">
-   <div class="sticky-contact">
-      <a href="../contact/contact.html">
-         <img src="../resources/images/indicator-sticky-contact.svg" alt="contact">
-      </a>
-   </div>
-</div>
 
 </body>
 </html>
