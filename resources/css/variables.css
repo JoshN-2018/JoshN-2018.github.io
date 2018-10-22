@@ -30,6 +30,9 @@
   --indent-3-col: 10.5rem; /* 168px */
 }
 
+.shadow {
+   box-shadow: var(--shadow-soft);
+}
 
 
 /* Global structure elements */
@@ -40,6 +43,12 @@ body {
    margin: 0 auto;
    /* justify-content: center; */
    max-width: 1440px;
+}
+
+.body-test {
+   display: initial;
+   margin: initial;
+   max-width: initial;
 }
 
 #sticky-track {
@@ -82,6 +91,18 @@ body {
    transition: 0.5s all ease;
 }
 
+
+#sticky-contact {
+   padding-top: 20px;
+   transition: 0.5s all ease;
+   transform: translateY(-196px);
+}
+
+#sticky-contact img {
+   height: 11rem;
+}
+
+
 /* .sticky-contact {
    fill: #CCC;
 } */
@@ -110,6 +131,11 @@ body {
    /* regions-ALL */
 .container-flex {
   display: flex;
+}
+
+.container-flex-end {
+  display: flex;
+  justify-content: flex-end;
 }
 /* end of: Document flex wrapper */
 
@@ -140,6 +166,51 @@ body {
    }
 }
 /* end of: Margins wrapper */
+
+/* Margins wrapper test */
+
+/* region small */
+.container-test {
+   margin: 0 auto;
+   padding: 0 1.25rem;
+   overflow: hidden;
+   max-width: 1440px;
+   position: relative;
+}
+
+/* region medium */
+@media (min-width: 720px) {
+   .container-test {
+      padding: 0 2.5rem;
+   }
+}
+
+/* region large */
+@media (min-width: 1100px) {
+    .container {
+      padding: 0 3.75rem;
+   }
+}
+/* end of: Margins wrapper test*/
+
+
+
+/* Margins wrapper test */
+
+/* region small */
+#container-case-stick {
+   margin: 0 auto;
+   overflow: hidden;
+   max-width: 1440px;
+   margin-bottom: -196px;
+   /* transform: translateY(-196px); */
+   transition: transform 1s ease;
+   /* position: relative; */
+}
+
+
+/* end of: Margins wrapper test*/
+
 
 /* Interactive elements */
 

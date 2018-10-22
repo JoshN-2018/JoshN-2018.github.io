@@ -26,7 +26,7 @@ html {
     bottom: 0;
     padding: 1.30rem 1.25rem;
     background-color: var(--color-white);
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
 }
 
@@ -68,7 +68,7 @@ html {
       position: fixed;
       bottom: 1.25rem;
       right: 1.25rem;
-      z-index: 3;
+      z-index: 4;
    }
 
    #menu-button {
@@ -125,19 +125,30 @@ nav #icon-contact img {
    justify-content: flex-end;
 }
 
-/* this is the class we add with js */
+
+/* js classes */
 .sticky {
-   position: fixed;
-   right: 0;
+   position: fixed !important;
+   top: 0px;
+   z-index: 2;
+   transform: translateY(0) !important;
+}
+
+.stickyM {
+   position: fixed !important;
+   top: 0px;
    z-index: 2;
    height: 45px;
    background-color: var(--color-blue-sky) !important;
-   /* justify-content: center !important; */
 }
+
 
 .shift {
    transform: translate(calc(-50vw + 74px)) !important;
 }
+/* end of js classes */
+
+
 
 nav .logo {
    flex-grow: 1;
@@ -323,13 +334,14 @@ nav .logo img {
    /* region medium */
 @media (min-width: 720px) {
    .hero-section-case .container.container-flex {
-      justify-content: space-between;
+      /* justify-content: space-between; */
    }
 
    .hero-section-case .hero-content {
       flex-direction: row;
       padding-top: var(--space-medium);
-      margin-bottom: var(--space-medium)
+      margin-bottom: var(--space-medium);
+      justify-content: flex-end;
    }
 
    .hero-section-case .hero-title img:first-child {
@@ -1111,6 +1123,13 @@ footer .social-icons img {
    .case.details img {
       margin-bottom: var(--space-large);
    }
+}
+
+
+/* Case-DV */
+   /* region small */
+.case.blueprint img {
+   /* margin: 0 -40px; */
 }
 
 
