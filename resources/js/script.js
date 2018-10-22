@@ -33,7 +33,7 @@ function stickyFunction() {
   }
 }
 
-
+/*
 // Desktop sticky header
 
 window.onscroll = function() {stickyFunctionLarge()};
@@ -54,3 +54,4 @@ function stickyFunctionLarge() {
     gap.style.marginBottom = "-196px";
   }
 }
+*/
