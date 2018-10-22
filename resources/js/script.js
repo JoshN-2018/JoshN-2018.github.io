@@ -12,7 +12,6 @@ function off() {
      document.getElementById("menu-button").style.display = "block";
 }
 
-
 // Mobile sticky header
 
 window.onscroll = function() {stickyFunction()};
@@ -35,7 +34,7 @@ function stickyFunction() {
 }
 
 
-// Mobile sticky header
+// Desktop sticky header
 
 window.onscroll = function() {stickyFunctionLarge()};
 
