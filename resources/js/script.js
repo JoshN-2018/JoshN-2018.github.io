@@ -3,6 +3,8 @@
 var overlay = document.getElementById("overlay");
 
 function on() {
+   overlay.classList.remove("overlayOff");
+   overlay.style.transition = "opacity 0.5s ease";
    overlay.classList.add("overlayOn");
     // document.getElementById("overlay").style.display = "block";
    document.getElementById("menu-button").style.display = "none";
@@ -11,6 +13,10 @@ function on() {
 
 function off() {
    overlay.classList.remove("overlayOn");
+   //can I trigger the translation on an 'onAnimationEnd event?'
+   overlay.style.transition = "all 0.75s ease";
+   overlay.classList.add("overlayOff");
+
    // document.getElementById("overlay").style.display = "none";
    document.getElementById("menu-button-off").style.display = "none";
    document.getElementById("menu-button").style.display = "block";

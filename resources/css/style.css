@@ -28,9 +28,9 @@ html {
     background-color: var(--color-white);
     z-index: 3;
     cursor: pointer;
-    opacity: 1;
+    opacity: 0;
     transform: translateY(100%);
-    transition: opacity 1s ease;
+    transition: opacity 0.5s ease;
 }
 
 #overlay h2 {
@@ -45,10 +45,18 @@ html {
    height: 0.9rem;
 }
 
+/* js classes */
 .overlayOn {
    transform: translateY(0%) !important;
-   opacity: 1;
+   opacity: 1 !important;
 }
+
+.overlayOff {
+   transform: translateX(-100%) !important;
+   opacity: 0 !important;
+}
+/* end of js classes */
+
 
    /* Button-overlay */
 
