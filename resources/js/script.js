@@ -3,19 +3,25 @@
 var overlay = document.getElementById("overlay");
 
 function on() {
+   overlay.classList.remove("overlayShift");
    overlay.classList.remove("overlayOff");
    overlay.style.transition = "opacity 0.5s ease";
    overlay.classList.add("overlayOn");
-    // document.getElementById("overlay").style.display = "block";
    document.getElementById("menu-button").style.display = "none";
    document.getElementById("menu-button-off").style.display = "block";
 }
 
+// function to be called after set time period
+function delay() {
+   overlay.classList.add("overlayShift");
+}
+
 function off() {
    overlay.classList.remove("overlayOn");
-   //can I trigger the translation on an 'onAnimationEnd event?'
-   overlay.style.transition = "all 0.75s ease";
    overlay.classList.add("overlayOff");
+   overlay.style.transition = "opacity 0.5s ease";
+   setTimeout(function(){delay(); }, 500);
+
 
    // document.getElementById("overlay").style.display = "none";
    document.getElementById("menu-button-off").style.display = "none";
