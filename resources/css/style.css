@@ -1364,7 +1364,7 @@ footer .social-icons img {
 }
 
 .skills-detail .body {
-   border-bottom: 1px solid var(--color-black);
+   border-bottom: 1px solid var(--color-light-grey);
    margin-bottom: var(--space-tiny);
    line-height: 2.2;
 }
@@ -1468,6 +1468,10 @@ footer .social-icons img {
 @media (min-width: 1100px) {
    .contact .hero-text {
       width: 54%;
+   }
+
+   .skills-detail .body {
+      border-bottom: 1px solid var(--color-black);
    }
 
    .contact .sidekick {
