@@ -276,7 +276,7 @@ nav #icon-contact img {
    .hero-section .hero-content {
       flex-direction: row;
       padding-top: var(--space-large);
-      padding-left: var(--indent-1-col);
+      /* padding-left: var(--indent-1-col); */
       padding-right: var(--indent-1-col);
       margin-bottom: var(--space-huge);
    }
@@ -288,7 +288,7 @@ nav #icon-contact img {
 
    .hero-text {
       margin-top: 2.938rem;
-      width: 75%;
+      width: 85%;
    }
 
    .hero-text .hero {
@@ -311,7 +311,7 @@ nav #icon-contact img {
 
    .hero-text {
       margin-top: 2.938rem;
-      width: 61%;
+      width: 75%;
    }
 
    .hero-text .hero {
