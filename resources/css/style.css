@@ -785,11 +785,11 @@ footer .social-icons img {
    margin-bottom: var(--space-tiny);
 }
 
-.case .cta-block .h3 {
+.cta-block .h3 {
    margin-bottom: var(--space-petit);
 }
 
-.case .cta-block {
+.cta-block {
    margin: var(--space-medium) 0;
 }
    /* form comp */
