@@ -53,6 +53,7 @@ function stickyFunction() {
     header.classList.add("stickyM");
     content.classList.add("shift");
     content.style.paddingTop = "1.1rem";
+    // content.style.fontWeight = "700";
     // large
     headerLarge.classList.add("sticky");
     gap.style.marginBottom = "0px";
@@ -61,8 +62,35 @@ function stickyFunction() {
     header.classList.remove("stickyM");
     content.classList.remove("shift");
     content.style.paddingTop = "0.4rem";
+    // content.style.fontWeight = "400";
     // large
     headerLarge.classList.remove("sticky");
     gap.style.marginBottom = "-196px";
   }
+}
+/*
+// Show current link
+var pageID = document.getelementsbytagname("nav");
+var caseLink = document.getElementById("cases-link");
+var experimentsLink = document.getElementById("cases-link");
+var contactLink = document.getElementById("cases-link");
+
+
+function currentLink() {
+   if pageID.window.location.pathname === "/index.html"; {
+      caseLink.classList.add("current");
+   } else {
+
+   }
+
+   }
+
+
+*/
+
+
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+        document.links[i].className = "current";
+    }
 }

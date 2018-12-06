@@ -137,7 +137,7 @@
 
 /* logo hover */
 nav .logo {
-   transition: all 0.3s ease;
+   transition: all 0.5s ease;
 }
 
 nav .logo:hover {
@@ -145,11 +145,16 @@ nav .logo:hover {
 }
 
 .logo-region-m-l img {
-   transition: all 0.3s ease;
+   transition: all 0.5s ease;
 }
 
 .logo-region-m-l img:hover {
    opacity: 0.3;
+}
+
+/* Current link (nav) */
+nav .current {
+   border-bottom: 1px solid var(--color-black);
 }
 
 
