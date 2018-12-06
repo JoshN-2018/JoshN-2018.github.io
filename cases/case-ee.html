@@ -1,84 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <meta property="og:image" content="..resources/images/oc-tile-social.png">
-   <meta property="og:image:type" content="image/jpeg">
-   <meta property="og:image:width" content="200">
-   <meta property="og:image:height" content="200">
+---
+---
 
-   <title>Case: Oxycoin</title>
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
-   <link rel="stylesheet" type="text/css" href="../resources/css/typography.css">
-   <link rel="stylesheet" type="text/css" href="../resources/css/variables.css">
-   <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
-   <link rel="icon" href="../resources/images/favicon.png" type="image/x-icon">
-</head>
+{% include head.html %}
+
 <body>
 
 
-
-<!-- Menu-overlay -->
-
-   <div id="overlay">
-
-      <a href="index.html">
-         <img src="../resources/images/logo-jn.svg" alt="logo">
-      </a>
-      <div class="menu-items">
-         <h2 class="h1 centered"><a href="../index.html">Cases</a></h2>
-         <h2 class="h1 centered"><a href="../experiments/exp.html">Experiments</a></h2>
-         <h2 class="h1 centered"><a href="../contact/contact.html">Contact</a></h2>
-      </div>
-
-   </div>
-
-   <!-- Button-overlay -->
-   <div onclick="on()" id="menu-button">
-      <img src="../resources/images/icon-menu.svg" alt="menu">
-   </div>
-   <div onclick="off()" id="menu-button-off">
-      <img src="../resources/images/icon-menu-cross.svg" alt="menu">
-   </div>
-
-
-<!-- Sticky Header -->
-
-   <div class="container-flex-end" id="container-case-stick">
-      <div id="sticky-contact">
-         <a href="../contact/contact.html">
-            <img src="../resources/images/indicator-sticky-contact.svg" alt="contact">
-         </a>
-      </div>
-   </div>
-
-
-<!-- App-header -->
-
-   <nav>
-      <div class="container-flex container">
-         <div class="logo">
-            <a href="../index.html"> <!-- link back to home -->
-            <img src="../resources/images/logo-jn.svg" alt="logo">
-            </a>
-         </div>
-         <ul class="container-flex nav">
-            <li class="link-collapsible strike"><a href="../index.html#showcase">Projects</a></li>
-            <li class="link-collapsible strike"><a href="../experiments/exp.html">Experiments</a></li>
-            <li class="link-collapsible strike"><a href="../contact/contact.html">Contact</a></li>
-         </ul>
-         <div id="icon-contact">
-            <div id="stick-icon-cont">
-               <span class="strike"><a href="../contact/contact.html">Contact</a></span>
-               <a href="../contact/contact.html">
-                  <img src="../resources/images/icon-contact.svg" alt="contact">
-               </a>
-            </div>
-         </div>
-      </div>
-   </nav>
+{% include sticky-header.html %}
+{% include app-header.html %}
 
 
 <!-- Hero-section-case -->
@@ -270,56 +199,8 @@
 <!-- end of: Elkmont-case -->
 
 
-
-
-<!-- Footer -->
-
-   <footer>
-      <div class="container">
-         <div class="container-flex wrapper">
-
-            <div class="logo-region-m-l">
-               <a href="#"><img src="../resources/images/logo-jn.svg" alt="logo"></a>
-            </div>
-
-            <div class="footer-content container-flex">
-               <div class="footer-left">
-                  <h4 class="h4 bold">Contact</h4>
-                  <ul class="body-petit">
-                     <li><a class="strike-small" href="mailto:josh.noon1@gmail.com">josh.noon1@gmail.com</a></li>
-                     <li><a class="strike-small" href="tel:+31658902162">0658 902 162</a></li>
-                  </ul>
-               </div>
-               <div class="footer-right">
-                  <h4 class="h4 bold">Cases</h4>
-                  <ul class="body-petit">
-                     <li><a class="strike-small" href="../cases/case-oc.html">Oxycoin</a></li>
-                     <li><a class="strike-small" href="../cases/case-dv.html">De Voorhoede</a></li>
-                     <li><a class="strike-small" href="../cases/case-ee.html">Elkmont Exchange</a></li>
-                  </ul>
-               </div>
-            </div>
-
-               <!-- Container for social icons -->
-            <div class="container-flex icon-container">
-               <div class="logo-region-small">
-                  <a href="#"><img src="../resources/images/logo-jn.svg" alt="logo"></a>
-               </div>
-               <div class="social-icons container-flex">
-                  <a href="https://dribbble.com/JoshNoon" target="_blank"><img src="../resources/images/icon-social-dr.svg" alt="dribble"></a>
-                  <a href="https://www.behance.net/joshuanoondesign" target="_blank"><img src="../resources/images/icon-social-be.svg" alt="behance"></a>
-                  <a href="https://www.linkedin.com/in/joshua-noon/" target="_blank"><img src="../resources/images/icon-social-in.svg" alt="linked-in"></a>
-                  <a href="https://twitter.com/Josh_noon" target="_blank"><img src="../resources/images/icon-social-tw.svg" alt="twitter"></a>
-               </div>
-            </div>
-
-         </div>
-      </div>
-   </footer>
-
-
-<!-- js -->
-<script type="text/javascript" src="../resources/js/script.js"></script>
+{% include footer.html %}
+{% include page-end.html %}
 
 
 </body>
