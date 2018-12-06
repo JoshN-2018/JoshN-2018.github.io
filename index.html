@@ -8,9 +8,10 @@
 
 <!-- sticky menu set-up -->
 
-<section id="index-wrapper">
-<section id="content">
+<!-- <section id="index-wrapper">
+<section id="content"> -->
 
+{% include sticky-header.html %}
 {% include app-header.html %}
 
 
@@ -41,7 +42,7 @@
 
 <!-- Showcase-section -->
    <section class="showcase-section">
-      <div class="container-index">
+      <div class="container">
          <div class="container-flex">
 
             <div class="showcase-left">
@@ -96,19 +97,6 @@
 
 
 {% include footer.html %}
-
-
-</section> <!-- end of content wrapper -->
-<div id="sticky-track">
-   <div class="sticky-contact">
-      <a href="contact/contact.html">
-         <img src="resources/images/indicator-sticky-contact.svg" alt="contact">
-      </a>
-   </div>
-</div>
-</section> <!-- end of index wrapper -->
-
-
 {% include page-end.html %}
 
 

@@ -152,22 +152,13 @@ nav .logo img {
 /* end of: App-header */
 
 
-/* App-header -index */
-
-   /* region small */
-nav div.container-index {
-   padding-right: 0rem;
-}
-/* end of: App-header index */
-
-
 
 /* sticky header region small */
       /* object */
 #icon-contact {
    background-color: var(--color-white);
-   padding: 1rem 1.25rem 0.25rem 0.5rem;
-   margin-top: -0.75rem;
+   padding: 0.8rem 0 0.25rem 0.5rem;
+   margin-top: -0.5rem;
    width: 100%;
    transition: 0.5s all ease;
 }
@@ -175,23 +166,17 @@ nav div.container-index {
 #icon-contact img {
    margin-left: 1rem;
    fill: red;
-   /* margin-right: -0.5rem; */
-   /* margin-top: 0.25rem; */
-}
-
-nav #icon-contact img {
-   height: 1.25rem;
+   height: 1.35rem;
 }
 
 #stick-icon-cont {
-   padding-top: 0.15rem;
+   padding-top: 0.5rem;
    transition: 0.3s all ease;
    display: flex;
    align-items: flex-start;
    justify-content: flex-end;
 }
 /* end of: sticky header region small */
-
 
 
 /* sticky header region large */
@@ -218,7 +203,7 @@ nav #icon-contact img {
    position: fixed;
    right: 0;
    z-index: 2;
-   height: 45px;
+   height: 55px;
    background-color: var(--color-white);
    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
