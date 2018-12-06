@@ -170,7 +170,7 @@ nav .logo img {
 }
 
 #stick-icon-cont {
-   padding-top: 0.5rem;
+   padding-top: 0.4rem;
    transition: 0.3s all ease;
    display: flex;
    align-items: flex-start;
@@ -203,13 +203,13 @@ nav .logo img {
    position: fixed;
    right: 0;
    z-index: 2;
-   height: 55px;
+   height: 65px;
    background-color: var(--color-white);
    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .shift {
-   transform: translate(calc(-50vw + 74px)) !important;
+   transform: translate(calc(-50vw + 60px)) !important;
 }
 /* end of js classes */
 

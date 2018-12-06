@@ -52,7 +52,7 @@ function stickyFunction() {
     // small
     header.classList.add("stickyM");
     content.classList.add("shift");
-    content.style.paddingTop = "0.7rem";
+    content.style.paddingTop = "1.1rem";
     // large
     headerLarge.classList.add("sticky");
     gap.style.marginBottom = "0px";
@@ -60,7 +60,7 @@ function stickyFunction() {
     // small
     header.classList.remove("stickyM");
     content.classList.remove("shift");
-    content.style.paddingTop = "0.5rem";
+    content.style.paddingTop = "0.4rem";
     // large
     headerLarge.classList.remove("sticky");
     gap.style.marginBottom = "-196px";
