@@ -43,6 +43,7 @@ html {
 
 #overlay img {
    height: 0.9rem;
+   margin-top: 0.45rem;
 }
 
 /* js classes */
@@ -1414,12 +1415,29 @@ footer .social-icons img {
 }
 
 .hero-content .social-icons {
-   display: none;
+   margin-bottom: var(--space-small);
+}
+
+.hero-content .social-icons img {
+   height: 1.5rem;
+   margin-left: var(--space-small);
+}
+
+.hero-content .social-icons .dribble {
+   margin-left: 0;
 }
 
 .hero-contact .button-primary {
    margin: var(--space-std) 0 1.25rem 0;
    width: 100%;
+}
+
+.hero-section.contact .indicators {
+   display: none;
+}
+
+.skills hr {
+   display: none;
 }
    /* end of: hero-contact */
 
@@ -1442,6 +1460,7 @@ footer .social-icons img {
    .skills hr {
       margin: var(--space-medium) 0;
       border-color: var(--color-black);
+      display: flex;
    }
 
    /* hero-contact */
@@ -1458,16 +1477,13 @@ footer .social-icons img {
       justify-content: flex-start;
    }
 
-   .hero-content .social-icons img {
-      height: 1.5rem;
-      margin-left: var(--space-small);
+   .hero-content .social-icons {
+      margin-bottom: var(--space-small);
    }
 
-   .hero-content .social-icons .dribble {
-      margin-left: 0;
+   .hero-section.contact .indicators {
+      display: initial;
    }
-
-
 }
 /* end of: hero-contact */
 
