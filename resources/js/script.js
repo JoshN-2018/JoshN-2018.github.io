@@ -69,14 +69,26 @@ function stickyFunction() {
   }
 }
 
-/*
+
 // Show current link
-var pageID = document.getelementsbytagname("nav");
+// var pageID = window.location.pathname;
+
+// store nav strings
+var index = "/index.html"
 var caseLink = document.getElementById("cases-link");
-var experimentsLink = document.getElementById("experiments-link");
-var contactLink = document.getElementById("contact-link");
+// var experimentsLink = document.getElementById("experiments-link");
+// var contactLink = document.getElementById("contact-link");
+
+function currentLink() {
+   if (window.location.pathname === index) {
+      caseLink.classList.add("current");
+   } else {
+   caseLink.classList.remove("current");
+   }
+}
 
 
+/*
 function currentLink() {
    if pageID.window.location.pathname === "/index.html" {
       caseLink.classList.add("current");
@@ -101,6 +113,7 @@ function currentLink() {
 
 
 
+/*
 var url = "http://joshn-2018.github.io/index.html".split("/"); //replace string with location.href
 var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
 //naturally you could use something other than the <nav> element
@@ -112,7 +125,7 @@ for(i;i<navLinks.length;i++){
    navLinks[i].className = "current";
   }
 }
-
+*/
 
 // for (var i = 0; i < document.links.length; i++) {
 //     if (document.links[i].href == document.URL) {
