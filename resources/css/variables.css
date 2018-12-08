@@ -154,9 +154,13 @@ nav .logo:hover {
 
 /* Current link (nav) */
 nav .current {
-   border-bottom: 1px solid var(--color-black);
+   font-weight: 600;
 }
 
+/* Footer category hover */
+footer h4:hover {
+   border-width: 2px;
+}
 
 /* Strike (nav) */
 .strike {

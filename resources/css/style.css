@@ -912,7 +912,8 @@ footer .social-icons img {
    }
 
    .case .brand-assets {
-      padding: 0 var(--indent-2-col);
+      /* extra padding on the right side because the images over-run their container */
+      padding: 0 var(--indent-3-col) 0 var(--indent-2-col);
    }
 
    .case .oxy-illus-title {

@@ -27,6 +27,30 @@ function off() {
    document.getElementById("menu-button").style.display = "block";
 }
 
+
+
+// link highlighting
+
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+        document.links[i].className = "current";
+    }
+}
+
+var logo = document.getElementById("logo-nav");
+logo.classList.remove("current");
+
+
+// Removing contact link
+var contactLink = document.getElementById("contact-link");
+
+if(window.location.pathname === "/contact/contact.html") {
+   contactLink.style.display = "none";
+} else {
+   contactLink.style.display = "initial";
+}
+
+
 // Mobile sticky header
 
 window.onscroll = function() {stickyFunction()};
@@ -69,12 +93,13 @@ function stickyFunction() {
   }
 }
 
-
+/*
 // Show current link
-// var pageID = window.location.pathname;
 
-// store nav strings
-var index = "/index.html"
+// page addresses
+var index = "/index.html";
+
+// nav links
 var caseLink = document.getElementById("cases-link");
 // var experimentsLink = document.getElementById("experiments-link");
 // var contactLink = document.getElementById("contact-link");
@@ -86,8 +111,7 @@ function currentLink() {
    caseLink.classList.remove("current");
    }
 }
-
-
+*/
 /*
 function currentLink() {
    if pageID.window.location.pathname === "/index.html" {
@@ -126,9 +150,4 @@ for(i;i<navLinks.length;i++){
   }
 }
 */
-
-// for (var i = 0; i < document.links.length; i++) {
-//     if (document.links[i].href == document.URL) {
-//         document.links[i].className = "current";
-//     }
-// }
+// var navLinks = document.getElementsByTagName("nav");
