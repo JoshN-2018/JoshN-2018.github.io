@@ -43,7 +43,7 @@ html {
 
 #overlay img {
    height: 0.9rem;
-   margin-top: 0.45rem;
+   margin-top: 0.4rem;
 }
 
 /* js classes */
@@ -158,9 +158,9 @@ nav .logo img {
 #icon-contact {
    background-color: var(--color-white);
    padding: 0.8rem 0 0.25rem 0.5rem;
-   margin-top: -0.5rem;
+   margin-top: -1rem;
    width: 100%;
-   transition: 0.5s all ease;
+   transition: 0.5s transform ease;
 }
 
 #icon-contact img {
@@ -209,9 +209,10 @@ nav .logo img {
 
 .stickyM {
    position: fixed;
+   padding-top: 2rem !important;
    right: 0;
    z-index: 2;
-   height: 65px;
+   height: 85px;
    background-color: var(--color-white);
    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }

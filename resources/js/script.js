@@ -28,28 +28,40 @@ function off() {
 }
 
 
-
 // link highlighting
 
-for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href == document.URL) {
-        document.links[i].className = "current";
-    }
-}
-
-var logo = document.getElementById("logo-nav");
-logo.classList.remove("current");
-
-
-// Removing contact link
+// nav link ids
+var caseLink = document.getElementById("cases-link");
+var experimentsLink = document.getElementById("experiments-link");
 var contactLink = document.getElementById("contact-link");
+var iconContact = document.getElementById("icon-contact");
+var logo = document.getElementById("logo-nav");
+var width = 720
 
-if(window.location.pathname === "/contact/contact.html") {
-   contactLink.style.display = "none";
+
+if(window.location.pathname === "/index.html") {
+   caseLink.classList.add("current");
 } else {
-   contactLink.style.display = "initial";
+   caseLink.classList.remove("current");
+}
+if(window.location.pathname === "/experiments/exp.html") {
+   experimentsLink.classList.add("current");
+} else {
+   experimentsLink.classList.remove("current");
+}
+if(window.location.pathname === "/contact/contact.html") {
+   contactLink.classList.add("current");
+   iconContact.style.display = "none";
+
+} else {
+   contactLink.classList.remove("current");
 }
 
+if(window.location.pathname === "/contact/contact.html" && window.innerWidth < width) {
+   logo.style.marginTop = "0.45rem";
+} else {
+   logo.style.marginTop = "0rem";
+}
 
 // Mobile sticky header
 
@@ -92,6 +104,34 @@ function stickyFunction() {
     gap.style.marginBottom = "-196px";
   }
 }
+
+
+
+
+// link highlighting
+/*
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+        document.links[i].className = "current";
+    }
+}
+
+var logo = document.getElementById("logo-nav");
+logo.classList.remove("current");
+
+
+// Removing contact link
+
+var contactLink = document.getElementById("contact-link");
+
+if(window.location.pathname === "/contact/contact.html") {
+   contactLink.style.display = "none";
+} else {
+   contactLink.style.display = "initial";
+}
+*/
+
+
 
 /*
 // Show current link
