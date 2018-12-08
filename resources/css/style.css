@@ -723,7 +723,7 @@ footer .social-icons img {
 }
 
 
-   /* mobile first component */
+   /* mobile first component (region small) */
 .color-block-wrapper {
    justify-content: center;
 }
@@ -754,8 +754,11 @@ footer .social-icons img {
    display: none;
 }
 
-.color-block-comp .mobile-first img {
-   height: 700px;
+.color-block-comp .mobile-first video {
+   height: 600px;
+   margin-top: var(--space-small);
+   width: 100%;
+   /* box-shadow: var(--shadow-soft); */
 }
    /* end of: mobile first component */
 
@@ -844,12 +847,21 @@ footer .social-icons img {
       margin-top: var(--space-large);
       margin-bottom: var(--space-small);
    }
+}
 
-   /* mobile first component */
+/* custom breakpoint */
+@media (min-width: 800px) {
+   /* mobile first component (region medium) */
+   .color-block-comp {
+      margin-top: var(--space-medium);
+      margin-bottom: var(--space-medium);
+   }
+
    .color-block-comp .case-text.region-ml {
       display: initial;
-      margin-top: 19rem;
+      margin-top: 17rem;
       padding-right: 3.75rem;
+      padding-left: 3.75rem;
    }
 
    .color-block-comp .h2 {
@@ -859,12 +871,16 @@ footer .social-icons img {
    .case .case-text.region-s {
       display: none;
    }
-   .color-block-comp .mobile-first img {
-      height: 800px;
+   .color-block-comp .mobile-first video {
+      height: 700px;
+      width: initial;
+      margin-left: var(--indent-2-col);
    }
+}
+/* end of: mobile first component */
 
-   /* end of: mobile first component */
-
+/* resume standard break-points */
+@media (min-width: 720px) {
    .case .case-image.crop {
       /* padding: 2rem 0; */
       transform: scale(1) translateX(0%);
@@ -914,7 +930,7 @@ footer .social-icons img {
 
    .case .brand-assets {
       /* extra padding on the right side because the images over-run their container */
-      padding: 0 var(--indent-3-col) 0 var(--indent-2-col);
+      padding: 0 14rem 0 var(--indent-2-col);
    }
 
    .case .oxy-illus-title {
@@ -946,7 +962,11 @@ footer .social-icons img {
        margin: var(--space-medium) 0;
    }
 
-   /* mobile first component */
+   /* mobile first component (region large) */
+   .color-block-comp {
+      margin-top: var(--space-large);
+   }
+
    .color-block-comp .case-text.region-ml {
       margin-top: 22rem;
       padding-right: 7rem;
@@ -959,8 +979,9 @@ footer .social-icons img {
    .case .case-text.region-s {
       display: none;
    }
-   .color-block-comp .mobile-first img {
+   .color-block-comp .mobile-first video {
       height: 900px;
+      margin-left: var(--indent-3-col);
    }
    /* end of: mobile first component */
 
@@ -1166,7 +1187,7 @@ footer .social-icons img {
    justify-content: center;
 }
 
-.color-block-comp img {
+.case.dv .color-block-comp img {
    max-width: 55vw;
 }
 
