@@ -53,7 +53,7 @@ function stickyFunction() {
     header.classList.add("stickyM");
     content.classList.add("shift");
     content.style.paddingTop = "1.1rem";
-    // content.style.fontWeight = "700";
+
     // large
     headerLarge.classList.add("sticky");
     gap.style.marginBottom = "0px";
@@ -62,36 +62,60 @@ function stickyFunction() {
     header.classList.remove("stickyM");
     content.classList.remove("shift");
     content.style.paddingTop = "0.4rem";
-    // content.style.fontWeight = "400";
+
     // large
     headerLarge.classList.remove("sticky");
     gap.style.marginBottom = "-196px";
   }
 }
+
 /*
 // Show current link
 var pageID = document.getelementsbytagname("nav");
 var caseLink = document.getElementById("cases-link");
-var experimentsLink = document.getElementById("cases-link");
-var contactLink = document.getElementById("cases-link");
+var experimentsLink = document.getElementById("experiments-link");
+var contactLink = document.getElementById("contact-link");
 
 
 function currentLink() {
-   if pageID.window.location.pathname === "/index.html"; {
+   if pageID.window.location.pathname === "/index.html" {
       caseLink.classList.add("current");
-   } else {
-
    }
-
-
+      else if pageID.window.location.pathname === "/cases/case-oc.html" || "/cases/case-dv.html" || "/cases/case-ee.html" {
+      caseLink.classList.add("current");
+      }
+      else if pageID.window.location.pathname === "/experiments/exp.html" {
+      experimentsLink.classList.add("current");
+      }
+      else if pageID.window.location.pathname === "/contact/contact.html" {
+      contactLink.classList.add("current");
+      }
+      else {
+         caseLink.classList.remove("current");
+         experimentsLink.classList.remove("current");
+         contactLink.classList.remove("current");
+      }
    }
-
-
+}
 */
 
 
-for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href == document.URL) {
-        document.links[i].className = "current";
-    }
+
+var url = "http://joshn-2018.github.io/index.html".split("/"); //replace string with location.href
+var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
+//naturally you could use something other than the <nav> element
+var i=0;
+var currentPage = url[url.length - 1];
+for(i;i<navLinks.length;i++){
+  var lb = navLinks[i].href.split("/");
+  if(lb[lb.length-1] == currentPage) {
+   navLinks[i].className = "current";
+  }
 }
+
+
+// for (var i = 0; i < document.links.length; i++) {
+//     if (document.links[i].href == document.URL) {
+//         document.links[i].className = "current";
+//     }
+// }

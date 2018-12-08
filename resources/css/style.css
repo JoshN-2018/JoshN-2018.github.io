@@ -190,7 +190,7 @@ nav .logo img {
    }
 
    #sticky-contact {
-      transition: 0.5s opacity ease;
+      transition: 0.5s all ease;
    }
 
    #sticky-contact:hover {
