@@ -1191,6 +1191,22 @@ footer .social-icons img {
    max-width: 55vw;
 }
 
+/* blue print */
+.dv-blue img {
+   max-width: 90% !important;
+   position: relative;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   left: 50%;
+}
+
+.color-block.dv-blue {
+   height: 90% !important;
+   top: 5%;
+   background-color: #FFFED9;
+}
+/* end of blue print */
+
 .case.dv .case-vid {
    margin-bottom: var(--space-medium);
    transform: scale(1.1);
@@ -1231,6 +1247,20 @@ footer .social-icons img {
       padding: 0 var(--space-small);
    }
 }
+
+@media (min-width: 1100px) {
+   /* blue print */
+   .dv-blue img {
+      max-width: 1400px !important;
+   }
+      /* correcting vertical offset */
+   .color-block-comp.dv-blue {
+      margin-top: -1rem;
+   }
+   /* end of blue print */
+}
+
+
 
 
 /* Experiments */
