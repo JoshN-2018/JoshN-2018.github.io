@@ -933,6 +933,11 @@ footer .social-icons img {
       padding: 0 14rem 0 var(--indent-2-col);
    }
 
+   .case .brand-assets.elk-assets {
+      /* padding-right reset for elkmont assets */
+      padding-right: var(--indent-1-col);
+   }
+
    .case .oxy-illus-title {
       padding: 0 var(--indent-2-col);
    }
@@ -1179,16 +1184,8 @@ footer .social-icons img {
 
 /* Case-DV */
    /* region small */
-.case.blueprint img {
-   /* margin: 0 -40px; */
-}
-
 .center {
    justify-content: center;
-}
-
-.case.dv .color-block-comp img {
-   max-width: 55vw;
 }
 
 /* blue print */
@@ -1207,13 +1204,15 @@ footer .social-icons img {
 }
 /* end of blue print */
 
-.case.dv .case-vid {
+.case.dv .vid-scale {
    margin-bottom: var(--space-medium);
    transform: scale(1.1);
 }
 
-.color-block.dv {
-   background-color: #FFFED9;
+.color-block.dv-mobile {
+   background-color: #FFE400;
+   height: 45% !important;
+   top: 19.5%;
 }
 
 .eyes-text.case-text {
@@ -1257,6 +1256,10 @@ footer .social-icons img {
    .color-block-comp.dv-blue {
       margin-top: -1rem;
    }
+
+   .color-block-comp.dv-mobile {
+      margin-top: -10rem 0;
+   }
    /* end of blue print */
 }
 
@@ -1272,10 +1275,6 @@ footer .social-icons img {
 
 .exp .exp-video {
    box-shadow: var(--shadow-soft);
-}
-
-.exp video {
-   width: 100% !important;
 }
 
 .exp .exp-text {
