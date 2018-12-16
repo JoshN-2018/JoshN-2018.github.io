@@ -730,6 +730,10 @@ footer .social-icons img {
 
 .color-block-comp .mobile-first {
    max-width: 2600px;
+   position: relative;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   left: 50%;
 }
 
 .color-block-comp {
@@ -808,6 +812,11 @@ footer .social-icons img {
       width: 50%;
    }
 
+   .case .case-image.crop {
+      padding: 0 0;
+      transform: initial;
+   }
+
    .case .brand-assets {
       flex-direction: row;
       justify-content: space-between;
@@ -868,7 +877,7 @@ footer .social-icons img {
       margin-bottom: var(--space-tiny);
    }
 
-   .case .case-text.region-s {
+   .case-text.region-s {
       display: none;
    }
    .color-block-comp .mobile-first video {
@@ -1188,9 +1197,13 @@ footer .social-icons img {
    justify-content: center;
 }
 
+.case.dv .color-block-comp img {
+   max-width: 75vw;
+}
+
 /* blue print */
 .dv-blue img {
-   max-width: 90% !important;
+   max-width: 80% !important;
    position: relative;
    transform: translateX(-50%);
    -webkit-transform: translateX(-50%);
@@ -1213,6 +1226,11 @@ footer .social-icons img {
    background-color: #FFE400;
    height: 45% !important;
    top: 19.5%;
+}
+
+/* off setting color-block dv-mobile extra space */
+.color-block-comp.dv-mobile {
+   margin: -2rem 0 -2rem 0; /* = var(--space-large) & var(--space-large) */
 }
 
 .eyes-text.case-text {
@@ -1245,6 +1263,15 @@ footer .social-icons img {
       width: 50%;
       padding: 0 var(--space-small);
    }
+
+   .case.dv .color-block-comp img {
+      max-width: 65vw;
+   }
+
+   /* off setting color-block dv-mobile extra space */
+   .color-block-comp.dv-mobile {
+      margin: -4.5rem 0 -4.5rem 0; /* = var(--space-large) & var(--space-large) */
+   }
 }
 
 @media (min-width: 1100px) {
@@ -1261,6 +1288,15 @@ footer .social-icons img {
       margin-top: -10rem 0;
    }
    /* end of blue print */
+
+   .case.dv .color-block-comp img {
+      max-width: 1150px;
+   }
+
+      /* off setting color-block dv-mobile extra space */
+   .color-block-comp.dv-mobile {
+      margin: -4.5rem 0 -7rem 0; /* = var(--space-large) & var(--space-larger) */
+   }
 }
 
 
@@ -1584,11 +1620,15 @@ footer .social-icons img {
 
 
 
-   /* do not move me! - I must be last */
+   /* do not move me! - I must be last — also note important must be used at the end of the declaration */
 .no-space {
-   margin-bottom: 0;
+   margin-bottom: 0 !important;
 }
 
+/* .color-block {
+   width: 100% !important;
+   overflow: visible !important;
+} */
 
 
 

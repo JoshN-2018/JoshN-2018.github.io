@@ -30,13 +30,25 @@
   --indent-3-col: 10.5rem; /* 168px */
 }
 
+/* Global tools */
+
 .shadow {
    box-shadow: var(--shadow-soft);
 }
+
+
    /* ensures video fills available space */
 .video-fill {
    width: 100% !important;
 }
+
+
+.scale-up {
+   transform-origin: top;
+   transform: scale(1.1) !important;
+   overflow: visible !important;
+}
+
 
    /* specs for full bleed images */
    /* region small */
@@ -44,7 +56,6 @@
 object-fit: cover;
 width: 100%;
 max-height: 300px;
-
 /* margin: var(--space-medium) 0 0 0; */
 }
 
@@ -63,6 +74,8 @@ max-height: 300px;
    max-height: 800px;
    }
 }
+/* end of: Global tools */
+
 
 
 /* Global structure elements */
