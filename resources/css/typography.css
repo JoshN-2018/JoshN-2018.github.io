@@ -20,7 +20,8 @@ strong,
 
 @font-face {
    font-family: "Domaine Display";
-   src: url("../fonts/DomaineDisplayTest-Bold.woff") format("woff");
+   src: url("../fonts/DomaineDisplayWeb-Bold.woff2") format("woff2"),
+   url("../fonts/DomaineDisplayWeb-Bold.woff") format("woff");
    font-weight: bold;
 }
 
