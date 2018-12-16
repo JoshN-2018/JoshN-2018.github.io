@@ -1197,10 +1197,13 @@ footer .social-icons img {
    justify-content: center;
 }
 
+<<<<<<< HEAD
 .case.dv .color-block-comp img {
    max-width: 75vw;
 }
 
+=======
+>>>>>>> 7f6e79e46ce98d6113239587307dde431e0fa556
 /* blue print */
 .dv-blue img {
    max-width: 80% !important;
@@ -1226,11 +1229,14 @@ footer .social-icons img {
    background-color: #FFE400;
    height: 45% !important;
    top: 19.5%;
+<<<<<<< HEAD
 }
 
 /* off setting color-block dv-mobile extra space */
 .color-block-comp.dv-mobile {
    margin: -2rem 0 -2rem 0; /* = var(--space-large) & var(--space-large) */
+=======
+>>>>>>> 7f6e79e46ce98d6113239587307dde431e0fa556
 }
 
 .eyes-text.case-text {
