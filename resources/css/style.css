@@ -1253,6 +1253,16 @@ footer .social-icons img {
    max-height: 160px;
 }
 
+.case-vid {
+   margin-bottom: var(--space-small);
+}
+
+.case-vid video {
+   transform-origin: top;
+   transform: scale(1.05);
+}
+
+   /* region medium */
 @media (min-width: 720px) {
    .eyes-cont {
       flex-direction: row;
@@ -1272,12 +1282,19 @@ footer .social-icons img {
    .color-block-comp.dv-mobile {
       margin: -4.5rem 0 -4.5rem 0; /* = var(--space-large) & var(--space-large) */
    }
+
+   .case-vid {
+      padding: 1rem;
+      padding-top: 0rem;
+      margin-bottom: var(--space-medium);
+   }
 }
 
+   /* region large */
 @media (min-width: 1100px) {
    /* blue print */
    .dv-blue img {
-      max-width: 1400px !important;
+      max-width: 1300px !important;
    }
       /* correcting vertical offset */
    .color-block-comp.dv-blue {
@@ -1296,6 +1313,21 @@ footer .social-icons img {
       /* off setting color-block dv-mobile extra space */
    .color-block-comp.dv-mobile {
       margin: -4.5rem 0 -7rem 0; /* = var(--space-large) & var(--space-larger) */
+   }
+
+   .case-vid-wrapper {
+      width: 100%; /* this is an unecessary declration but its nice semantically to see theres a wrapper at work */
+   }
+
+   .case-vid {
+      padding: 4rem;
+      padding-top: 0rem;
+      max-width: 1800px;
+      position: relative;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      left: 50%;
+      margin-bottom: 0;
    }
 }
 
