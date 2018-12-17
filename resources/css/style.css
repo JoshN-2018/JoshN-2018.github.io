@@ -464,7 +464,7 @@ nav .logo img {
    transform: scale(1.03);
 }
 
-.oxy-tile {
+.oxy-tile img {
    border: 1px solid #eee;
 }
 
@@ -472,6 +472,7 @@ nav .logo img {
 @media (min-width: 720px) {
    .showcase-section .container-flex {
       flex-direction: row;
+      flex-wrap: wrap;
       margin-top: var(--space-petit);
    }
 
@@ -482,21 +483,24 @@ nav .logo img {
    .showcase-section .h2 {
       margin-bottom: var(--space-tiny);
    }
-
+      /* this applies to all and is reflected without interference */
    .showcase-section .case-tile {
+      width: 46%;
       margin-bottom: var(--space-index-m);
    }
 
-   .showcase-section .case-tile:last-child {
-      margin-bottom: var(--space-larger);
+      /* setting margin on every second item */
+   .showcase-section .case-tile:nth-child(2n + 0) {
+      margin-left: 8%;
    }
 
-   .showcase-section .showcase-left {
-      padding-right: 4%;
+      /* 3rd item reverse stagger */
+   .showcase-section .case-tile:nth-child(0n + 3) {
+      margin-top: calc(var(--space-index-m) * -1);
    }
 
-   .showcase-section .showcase-right {
-      padding-left: 4%;
+      /* second item stagger */
+   .showcase-section .case-tile:nth-child(0n + 2) {
       margin-top: var(--space-index-m);
    }
 }
@@ -505,23 +509,31 @@ nav .logo img {
 @media (min-width: 1100px) {
    .showcase-section .container-flex {
       margin-top: var(--space-small);
-      padding: 0 var(--indent-2-col);
+      padding: 0 var(--indent-3-col);
    }
 
    .showcase-section .h2 {
       margin-bottom: var(--space-std);
    }
 
+   /* this applies to all and is reflected without interference */
    .showcase-section .case-tile {
+      width: 46%;
       margin-bottom: var(--space-index-l);
    }
 
-   .showcase-section .case-tile:last-child {
-      margin-bottom: var(--space-huge);
+      /* setting margin on every second item */
+   .showcase-section .case-tile:nth-child(2n + 0) {
+      margin-left: 8%;
    }
 
-   .showcase-section .showcase-right {
-      padding-left: 4%;
+      /* 3rd item reverse stagger */
+   .showcase-section .case-tile:nth-child(0n + 3) {
+      margin-top: calc(var(--space-index-l) * -1);
+   }
+
+      /* second item stagger */
+   .showcase-section .case-tile:nth-child(0n + 2) {
       margin-top: var(--space-index-l);
    }
 }
