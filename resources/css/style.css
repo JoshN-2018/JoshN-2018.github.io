@@ -1610,7 +1610,7 @@ footer .social-icons img {
 /* region large */
 @media (min-width: 1100px) {
    .contact .hero-text {
-      width: 53%;
+      width: 52%;
    }
 
    .skills-detail .body {
