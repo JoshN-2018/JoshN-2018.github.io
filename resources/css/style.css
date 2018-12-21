@@ -268,7 +268,6 @@ nav .logo img {
    .hero-section .hero-content {
       flex-direction: row;
       padding-top: var(--space-large);
-      /* padding-left: var(--indent-1-col); */
       padding-right: var(--indent-1-col);
       margin-bottom: var(--space-huge);
    }

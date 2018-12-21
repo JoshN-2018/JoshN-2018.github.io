@@ -106,88 +106,42 @@ function stickyFunction() {
 }
 
 
+//Above the line animate!!!
 
+   //check DOM is loaded before animating
+document.addEventListener("DOMContentLoaded", function(event) {
 
-// link highlighting
-/*
-for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href == document.URL) {
-        document.links[i].className = "current";
-    }
-}
+   // Get elements
+   var tile = document.getElementsByClassName("case-tile");
+   // var subTitle = document.getElementsByClassName("subTitle");
+   // var body = document.getElementsByClassName("body");
 
-var logo = document.getElementById("logo-nav");
-logo.classList.remove("current");
+   // Remove offsets from elements (to trigger animation)
+   function delay1() {
+      for (var i = 0; i < tile.length; i++) {
+         tile[i].classList.remove("offsetAn1");
+      }
 
-
-// Removing contact link
-
-var contactLink = document.getElementById("contact-link");
-
-if(window.location.pathname === "/contact/contact.html") {
-   contactLink.style.display = "none";
-} else {
-   contactLink.style.display = "initial";
-}
-*/
-
-
-
-/*
-// Show current link
-
-// page addresses
-var index = "/index.html";
-
-// nav links
-var caseLink = document.getElementById("cases-link");
-// var experimentsLink = document.getElementById("experiments-link");
-// var contactLink = document.getElementById("contact-link");
-
-function currentLink() {
-   if (window.location.pathname === index) {
-      caseLink.classList.add("current");
-   } else {
-   caseLink.classList.remove("current");
    }
-}
-*/
-/*
-function currentLink() {
-   if pageID.window.location.pathname === "/index.html" {
-      caseLink.classList.add("current");
-   }
-      else if pageID.window.location.pathname === "/cases/case-oc.html" || "/cases/case-dv.html" || "/cases/case-ee.html" {
-      caseLink.classList.add("current");
-      }
-      else if pageID.window.location.pathname === "/experiments/exp.html" {
-      experimentsLink.classList.add("current");
-      }
-      else if pageID.window.location.pathname === "/contact/contact.html" {
-      contactLink.classList.add("current");
-      }
-      else {
-         caseLink.classList.remove("current");
-         experimentsLink.classList.remove("current");
-         contactLink.classList.remove("current");
+   function delay2() {
+      for (var i = 0; i < tile.length; i++) {
+         tile[i].classList.remove("offsetAn2");
       }
    }
-}
-*/
+   function delay3() {
+      for (var i = 0; i < tile.length; i++) {
+         tile[i].classList.remove("offsetAn3");
+      }
+   }
+   function delay4() {
+      for (var i = 0; i < tile.length; i++) {
+         tile[i].classList.remove("offsetAn4");
+      }
+   }
 
-
-
-/*
-var url = "http://joshn-2018.github.io/index.html".split("/"); //replace string with location.href
-var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
-//naturally you could use something other than the <nav> element
-var i=0;
-var currentPage = url[url.length - 1];
-for(i;i<navLinks.length;i++){
-  var lb = navLinks[i].href.split("/");
-  if(lb[lb.length-1] == currentPage) {
-   navLinks[i].className = "current";
-  }
-}
-*/
-// var navLinks = document.getElementsByTagName("nav");
+   // Timings (call the above functions at set times)
+   setTimeout(function(){delay1(); }, 100);
+   setTimeout(function(){delay2(); }, 200);
+   setTimeout(function(){delay3(); }, 300);
+   setTimeout(function(){delay4(); }, 400);
+});

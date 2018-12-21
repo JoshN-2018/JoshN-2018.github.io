@@ -320,9 +320,37 @@ footer h4:hover {
 .hero-contact .strike:before {
    margin-top: 0.8rem;
 }
+
+
+/* offset animations */
+
+/* js classes */
+.offsetAn1 {
+   transform: translateY(50px);
+   opacity: 0;
+}
+
+.offsetAn2 {
+   transform: translateY(50px);
+   opacity: 0;
+}
+
+.offsetAn3 {
+   transform: translateY(50px);
+   opacity: 0;
+}
+
+.offsetAn4 {
+   transform: translateY(50px);
+   opacity: 0;
+}
+/* end of: js classes */
+
+
+.offset-an-props {
+   transition: all 0.75s cubic-bezier(.32,.17,.2,.99);
+}
 /* end of: Interactive elements */
-
-
 
 
 
