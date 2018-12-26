@@ -22,7 +22,6 @@ function off() {
    overlay.style.transition = "opacity 0.5s ease";
    setTimeout(function(){delay(); }, 500);
 
-
    document.getElementById("menu-button-off").style.display = "none";
    document.getElementById("menu-button").style.display = "block";
 }
