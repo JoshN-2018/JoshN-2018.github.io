@@ -128,45 +128,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
          anOne[0].classList.remove("offsetAn1");
       }
    }
+
    function delay2() {
-      // for (var i = 0; i < tile.length; i++) {
-      //    tile[i].classList.remove("offsetAn2");
-      // }
-      // for (var i = 0; i < heroText.length; i++) {
-      //    heroText[i].classList.remove("offsetAn2");
-      // }
-      // for (var i = 0; i < contactText.length; i++) {
-      //    contactText[i].classList.remove("offsetAn2");
-      // }
-      // for (var i = 0; i < contactBox.length; i++) {
-      //    contactBox[i].classList.remove("offsetAn2");
-      // }
       while (anTwo[0]) {
          anTwo[0].classList.remove("offsetAn2");
       }
    }
+
    function delay3() {
-      // for (var i = 0; i < tile.length; i++) {
-      //    tile[i].classList.remove("offsetAn3");
-      // }
-      // for (var i = 0; i < myRole.length; i++) {
-      //    myRole[i].classList.remove("offsetAn3");
-      // }
       while (anThree[0]) {
          anThree[0].classList.remove("offsetAn3");
       }
    }
+
    function delay4() {
-      // for (var i = 0; i < tile.length; i++) {
-      //    tile[i].classList.remove("offsetAn4");
-      // }
-      // for (var i = 0; i < heroImg.length; i++) {
-      //    heroImg[i].classList.remove("offsetAn4");
-      // }
       while (anFour[0]) {
          anFour[0].classList.remove("offsetAn4");
       }
    }
+   
    function removeProps() {
      while (anProps[0]) {
         anProps[0].classList.remove('offset-an-props');      }
