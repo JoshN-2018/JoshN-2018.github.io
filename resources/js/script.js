@@ -120,22 +120,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
    var heroText = document.getElementsByClassName("hero-text");
    var myRole = document.getElementsByClassName("my-role");
    var heroImg = document.getElementsByClassName("hero-img");
-   var contactTitle = document.getElementsByClassName("sidekick")
-   var contactText = document.getElementsByClassName("body-block")
-   var contactBox = document.getElementsByClassName("hero-contact")
-   var anProps = document.getElementsByClassName("offset-an-props")
+   var contactTitle = document.getElementsByClassName("sidekick");
+   var contactText = document.getElementsByClassName("body-block");
+   var contactBox = document.getElementsByClassName("hero-contact");
+   var anProps = document.getElementsByClassName("offset-an-props");
+   var anOne = document.getElementsByClassName("offsetAn1");
 
 
    // Remove offsets from elements (to trigger animation)
    function delay1() {
-      for (var i = 0; i < tile.length; i++) {
-         tile[i].classList.remove("offsetAn1");
-      }
-      for (var i = 0; i < heroTitle.length; i++) {
-         heroTitle[i].classList.remove("offsetAn1");
-      }
-      for (var i = 0; i < contactTitle.length; i++) {
-         contactTitle[i].classList.remove("offsetAn1");
+      // for (var i = 0; i < tile.length; i++) {
+      //    tile[i].classList.remove("offsetAn1");
+      // }
+      // for (var i = 0; i < heroTitle.length; i++) {
+      //    heroTitle[i].classList.remove("offsetAn1");
+      // }
+      // for (var i = 0; i < contactTitle.length; i++) {
+      //    contactTitle[i].classList.remove("offsetAn1");
+      // }
+      while (anOne[0]) {
+         anOne[0].classList.remove("offsetAn1");
       }
    }
    function delay2() {
@@ -170,8 +174,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
    }
    function removeClasses() {
      while (anProps[0]) {
-        anProps[0].classList.remove('offset-an-props')
-      }
+        anProps[0].classList.remove('offset-an-props');      }
    }
 
    // Timings (call the above functions at set times)
