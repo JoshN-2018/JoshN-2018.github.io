@@ -750,8 +750,8 @@ footer .social-icons img {
 
 
    /* mobile first component (region small) */
-.color-block-wrapper {
-   justify-content: center;
+.color-block-comp {
+   position: relative;
 }
 
 .color-block-comp .mobile-first {
@@ -763,9 +763,7 @@ footer .social-icons img {
    left: 50%;
 }
 
-.color-block-comp {
-   position: relative;
-}
+
          /* fucking proud of myself! */
 .color-block-comp .color-block {
    z-index: -1;
@@ -1224,7 +1222,6 @@ footer .social-icons img {
 
 /* blue print */
 .dv-blue img {
-   max-width: 80% !important;
    position: relative;
    -webkit-transform: translateX(-50%);
        -ms-transform: translateX(-50%);
@@ -1233,7 +1230,7 @@ footer .social-icons img {
 }
 
 .color-block.dv-blue {
-   height: 90% !important;
+   height: 90%;
    top: 5%;
    background-color: #FFFED9;
 }
