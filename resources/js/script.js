@@ -115,16 +115,19 @@ if(window.location.pathname === "/contact/index.html" && window.innerWidth < wid
 document.addEventListener("DOMContentLoaded", function(event) {
 
    // Get elements
-   var tile = document.getElementsByClassName("case-tile");
-   var heroTitle = document.getElementsByClassName("hero-title");
-   var heroText = document.getElementsByClassName("hero-text");
-   var myRole = document.getElementsByClassName("my-role");
-   var heroImg = document.getElementsByClassName("hero-img");
-   var contactTitle = document.getElementsByClassName("sidekick");
-   var contactText = document.getElementsByClassName("body-block");
-   var contactBox = document.getElementsByClassName("hero-contact");
+   // var tile = document.getElementsByClassName("case-tile");
+   // var heroTitle = document.getElementsByClassName("hero-title");
+   // var heroText = document.getElementsByClassName("hero-text");
+   // var myRole = document.getElementsByClassName("my-role");
+   // var heroImg = document.getElementsByClassName("hero-img");
+   // var contactTitle = document.getElementsByClassName("sidekick");
+   // var contactText = document.getElementsByClassName("body-block");
+   // var contactBox = document.getElementsByClassName("hero-contact");
    var anProps = document.getElementsByClassName("offset-an-props");
    var anOne = document.getElementsByClassName("offsetAn1");
+   var anTwo = document.getElementsByClassName("offsetAn2");
+   var anThree = document.getElementsByClassName("offsetAn3");
+   var anFour = document.getElementsByClassName("offsetAn4");
 
 
    // Remove offsets from elements (to trigger animation)
@@ -143,36 +146,45 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
    }
    function delay2() {
-      for (var i = 0; i < tile.length; i++) {
-         tile[i].classList.remove("offsetAn2");
-      }
-      for (var i = 0; i < heroText.length; i++) {
-         heroText[i].classList.remove("offsetAn2");
-      }
-      for (var i = 0; i < contactText.length; i++) {
-         contactText[i].classList.remove("offsetAn2");
-      }
-      for (var i = 0; i < contactBox.length; i++) {
-         contactBox[i].classList.remove("offsetAn2");
+      // for (var i = 0; i < tile.length; i++) {
+      //    tile[i].classList.remove("offsetAn2");
+      // }
+      // for (var i = 0; i < heroText.length; i++) {
+      //    heroText[i].classList.remove("offsetAn2");
+      // }
+      // for (var i = 0; i < contactText.length; i++) {
+      //    contactText[i].classList.remove("offsetAn2");
+      // }
+      // for (var i = 0; i < contactBox.length; i++) {
+      //    contactBox[i].classList.remove("offsetAn2");
+      // }
+      while (anTwo[0]) {
+         anTwo[0].classList.remove("offsetAn2");
       }
    }
    function delay3() {
-      for (var i = 0; i < tile.length; i++) {
-         tile[i].classList.remove("offsetAn3");
-      }
-      for (var i = 0; i < myRole.length; i++) {
-         myRole[i].classList.remove("offsetAn3");
+      // for (var i = 0; i < tile.length; i++) {
+      //    tile[i].classList.remove("offsetAn3");
+      // }
+      // for (var i = 0; i < myRole.length; i++) {
+      //    myRole[i].classList.remove("offsetAn3");
+      // }
+      while (anThree[0]) {
+         anThree[0].classList.remove("offsetAn3");
       }
    }
    function delay4() {
-      for (var i = 0; i < tile.length; i++) {
-         tile[i].classList.remove("offsetAn4");
-      }
-      for (var i = 0; i < heroImg.length; i++) {
-         heroImg[i].classList.remove("offsetAn4");
+      // for (var i = 0; i < tile.length; i++) {
+      //    tile[i].classList.remove("offsetAn4");
+      // }
+      // for (var i = 0; i < heroImg.length; i++) {
+      //    heroImg[i].classList.remove("offsetAn4");
+      // }
+      while (anFour[0]) {
+         anFour[0].classList.remove("offsetAn4");
       }
    }
-   function removeClasses() {
+   function removeProps() {
      while (anProps[0]) {
         anProps[0].classList.remove('offset-an-props');      }
    }
@@ -182,5 +194,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
    setTimeout(function(){delay2(); }, 200);
    setTimeout(function(){delay3(); }, 300);
    setTimeout(function(){delay4(); }, 400);
-   setTimeout(function(){removeClasses(); }, 1000);
+   setTimeout(function(){removeProps(); }, 1000);
 });
