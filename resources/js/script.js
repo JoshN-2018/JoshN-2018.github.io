@@ -52,7 +52,6 @@ if(window.location.pathname === "/experiments/index.html") {
 if(window.location.pathname === "/contact/index.html") {
    contactLink.classList.add("current");
    iconContact.style.display = "none";
-
 } else {
    contactLink.classList.remove("current");
 }
@@ -63,7 +62,8 @@ if(window.location.pathname === "/contact/contact.html" && window.innerWidth < w
    logo.style.marginTop = "0rem";
 }
 
-// Mobile sticky header
+
+// Sticky headers
 
 window.onscroll = function() {stickyFunction()};
 

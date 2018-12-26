@@ -29,7 +29,9 @@ html {
     z-index: 3;
     cursor: pointer;
     opacity: 0;
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
     transition: opacity 0.5s ease;
 }
 
@@ -46,25 +48,30 @@ html {
    margin-top: 0.4rem;
 }
 
-/* js classes */
+   /* js classes */
 .overlayOn {
-   transform: translateY(0%) !important;
+   -webkit-transform: translateY(0%) !important;
+       -ms-transform: translateY(0%) !important;
+           transform: translateY(0%) !important;
    opacity: 1 !important;
 }
 
 .overlayOff {
-   transform: translateY(0%) !important;
+   -webkit-transform: translateY(0%) !important;
+       -ms-transform: translateY(0%) !important;
+           transform: translateY(0%) !important;
    opacity: 0 !important;
 }
 
 .overlayShift {
-   transform: translateY(100%) !important;
+   -webkit-transform: translateY(100%) !important;
+       -ms-transform: translateY(100%) !important;
+           transform: translateY(100%) !important;
 }
-/* end of js classes */
+   /* end of js classes */
 
 
    /* Button-overlay */
-
    /* region-small */
 #menu-button img {
    height: 2.5rem;
@@ -77,7 +84,6 @@ html {
 #menu-button, #menu-button-off {
    display: none;
    padding: 0.5rem 0.5rem;
-   /* box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25); */
    background-color: var(--color-white);
    border: 1px solid var(--color-black);
 }
@@ -94,7 +100,10 @@ html {
       display: block;
    }
 }
-/* end of: Button-overlay */
+   /* end of: Button-overlay */
+
+/* end of: Menu-overlay */
+
 
 
 
@@ -202,9 +211,11 @@ nav .logo img {
 /* js classes */
 .sticky {
    position: fixed !important;
-   top: 0px;
+   top: 0;
    z-index: 2;
-   transform: translateY(0) !important;
+   -webkit-transform: translateY(0) !important;
+       -ms-transform: translateY(0) !important;
+           transform: translateY(0) !important;
 }
 
 .stickyM {
@@ -214,11 +225,13 @@ nav .logo img {
    z-index: 2;
    height: 85px;
    background-color: var(--color-white);
-   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .shift {
-   transform: translate(calc(-50vw + 55px)) !important;
+   -webkit-transform: translate(calc(-50vw + 55px)) !important;
+       -ms-transform: translate(calc(-50vw + 55px)) !important;
+           transform: translate(calc(-50vw + 55px)) !important;
 }
 /* end of js classes */
 
@@ -336,7 +349,9 @@ nav .logo img {
 
       /* rotating bottom carot */
 .hero-section-case .hero-title img:last-child {
-   transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+       -ms-transform: rotate(180deg);
+           transform: rotate(180deg);
    margin-top: var(--space-tiny);
    margin-left: 0.25rem;
 }
@@ -361,10 +376,6 @@ nav .logo img {
 
    /* region medium */
 @media (min-width: 720px) {
-   .hero-section-case .container.container-flex {
-      /* justify-content: space-between; */
-   }
-
    .hero-section-case .hero-content {
       flex-direction: row;
       padding-top: var(--space-medium);
@@ -455,12 +466,16 @@ nav .logo img {
 }
 
 .showcase-section .case-tile img {
-   transform-origin: bottom;
+   -webkit-transform-origin: bottom;
+       -ms-transform-origin: bottom;
+           transform-origin: bottom;
    transition: all 0.3s ease;
 }
 
 .case-tile img:hover {
-   transform: scale(1.03);
+   -webkit-transform: scale(1.03);
+       -ms-transform: scale(1.03);
+           transform: scale(1.03);
 }
 
 .oxy-tile img {
@@ -742,8 +757,9 @@ footer .social-icons img {
 .color-block-comp .mobile-first {
    max-width: 2600px;
    position: relative;
-   transform: translateX(-50%);
    -webkit-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+           transform: translateX(-50%);
    left: 50%;
 }
 
@@ -773,14 +789,15 @@ footer .social-icons img {
    height: 600px;
    margin-top: var(--space-small);
    width: 100%;
-   /* box-shadow: var(--shadow-soft); */
 }
    /* end of: mobile first component */
 
 
 .case .case-image.crop {
    padding: 3rem 0;
-   transform: scale(1.4) translateX(11%);
+   -webkit-transform: scale(1.4) translateX(11%);
+       -ms-transform: scale(1.4) translateX(11%);
+           transform: scale(1.4) translateX(11%);
 }
 
 .case .form-vids {
@@ -825,7 +842,9 @@ footer .social-icons img {
 
    .case .case-image.crop {
       padding: 0 0;
-      transform: initial;
+      -webkit-transform: initial;
+          -ms-transform: initial;
+              transform: initial;
    }
 
    .case .brand-assets {
@@ -902,8 +921,9 @@ footer .social-icons img {
 /* resume standard break-points */
 @media (min-width: 720px) {
    .case .case-image.crop {
-      /* padding: 2rem 0; */
-      transform: scale(1) translateX(0%);
+      -webkit-transform: scale(1) translateX(0%);
+          -ms-transform: scale(1) translateX(0%);
+              transform: scale(1) translateX(0%);
    }
 
    .case .cta-block {
@@ -940,10 +960,6 @@ footer .social-icons img {
 
    /* region large */
 @media (min-width: 1100px) {
-   .case .case-image, .case-image-shadow {
-      /* padding: 0 var(--indent-1-col); */
-   }
-
    .case .asset img {
       min-width: 400px;
    }
@@ -1072,7 +1088,9 @@ footer .social-icons img {
 }
 
 .case .guideline-img {
-   transform: scale(1.015);
+   -webkit-transform: scale(1.015);
+       -ms-transform: scale(1.015);
+           transform: scale(1.015);
 }
 
 .case .elk-assets .elk-mark {
@@ -1128,10 +1146,6 @@ footer .social-icons img {
       display: initial;
    }
 
-   /* .case .image-block img:nth-child(3) {
-      width: 2rem;
-   } */
-
    .case .elk-assets .elk-mark {
       width: 50%;
       align-items: center;
@@ -1176,10 +1190,6 @@ footer .social-icons img {
 
 /* region large */
 @media (min-width: 1100px) {
-   .case .elk-assets .elk-mark {
-      /* padding: 0 var(--indent-2-col); */
-   }
-
    .case .elk-mark img {
       height: 14rem;
    }
@@ -1216,8 +1226,9 @@ footer .social-icons img {
 .dv-blue img {
    max-width: 80% !important;
    position: relative;
-   transform: translateX(-50%);
    -webkit-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+           transform: translateX(-50%);
    left: 50%;
 }
 
@@ -1230,7 +1241,9 @@ footer .social-icons img {
 
 .case.dv .vid-scale {
    margin-bottom: var(--space-medium);
-   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+       -ms-transform: scale(1.1);
+           transform: scale(1.1);
 }
 
 .color-block.dv-mobile {
@@ -1241,7 +1254,7 @@ footer .social-icons img {
 
 /* off setting color-block dv-mobile extra space */
 .color-block-comp.dv-mobile {
-   margin: -2rem 0 -2rem 0; /* = var(--space-large) & var(--space-large) */
+   margin: -2rem 0 -2rem 0; /* = var(--space-small) & var(--space-small) */
 }
 
 .eyes-text.case-text {
@@ -1269,8 +1282,12 @@ footer .social-icons img {
 }
 
 .case-vid video {
-   transform-origin: top;
-   transform: scale(1.05);
+   -webkit-transform-origin: top;
+       -ms-transform-origin: top;
+           transform-origin: top;
+   -webkit-transform: scale(1.05);
+       -ms-transform: scale(1.05);
+           transform: scale(1.05);
 }
 
    /* region medium */
@@ -1296,7 +1313,7 @@ footer .social-icons img {
 
    .case-vid {
       padding: 1rem;
-      padding-top: 0rem;
+      padding-top: 0;
       margin-bottom: var(--space-medium);
    }
 }
@@ -1327,16 +1344,17 @@ footer .social-icons img {
    }
 
    .case-vid-wrapper {
-      width: 100%; /* this is an unecessary declration but its nice semantically to see theres a wrapper at work */
+      width: 100%; /* this is an unecessary declaration but its nice semantically to see theres a wrapper at work */
    }
 
    .case-vid {
       padding: 4rem;
-      padding-top: 0rem;
+      padding-top: 0;
       max-width: 1800px;
       position: relative;
-      transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
       left: 50%;
       margin-bottom: 0;
    }
@@ -1519,7 +1537,6 @@ footer .social-icons img {
 .hero-contact h4:nth-child(3) {
    margin-top: var(--space-tiny);
    margin-bottom: 0;
-   /* border-bottom: none; */
 }
 
 .hero-contact hr {
@@ -1668,12 +1685,6 @@ footer .social-icons img {
 .no-space {
    margin-bottom: 0 !important;
 }
-
-/* .color-block {
-   width: 100% !important;
-   overflow: visible !important;
-} */
-
 
 
 
