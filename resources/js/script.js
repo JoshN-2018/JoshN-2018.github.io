@@ -44,12 +44,12 @@ if(window.location.pathname === "/index.html") {
 } else {
    caseLink.classList.remove("current");
 }
-if(window.location.pathname === "/experiments/exp.html") {
+if(window.location.pathname === "/experiments/index.html") {
    experimentsLink.classList.add("current");
 } else {
    experimentsLink.classList.remove("current");
 }
-if(window.location.pathname === "/contact/contact.html") {
+if(window.location.pathname === "/contact/index.html") {
    contactLink.classList.add("current");
    iconContact.style.display = "none";
 
