@@ -102,8 +102,7 @@ if(window.location.pathname === "/contact/index.html") {
 } else {
    contactLink.classList.remove("current");
 }
-
-if(window.location.pathname === "/contact/contact.html" && window.innerWidth < width) {
+if(window.location.pathname === "/contact/index.html" && window.innerWidth < width) {
    logo.style.marginTop = "0.45rem";
 } else {
    logo.style.marginTop = "0rem";
