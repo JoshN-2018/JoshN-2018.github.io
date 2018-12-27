@@ -720,7 +720,7 @@ footer .social-icons img {
 }
 
 .case .brand-assets .asset img {
-   /* max-width: 300px; */
+   max-width: 300px;
 }
 
 .case .left .asset:first-child {
@@ -754,7 +754,7 @@ footer .social-icons img {
    position: relative;
 }
 
-.color-block-comp .mobile-first {
+.color-block-comp .mobile-first, .comp-content {
    max-width: 2600px;
    position: relative;
    -webkit-transform: translateX(-50%);
@@ -887,7 +887,7 @@ footer .social-icons img {
 }
 
 /* custom breakpoint */
-@media (min-width: 800px) {
+@media (min-width: 800px) { */
    /* mobile first component (region medium) */
    .color-block-comp {
       margin-top: var(--space-medium);

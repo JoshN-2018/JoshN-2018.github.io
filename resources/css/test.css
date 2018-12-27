@@ -1,0 +1,45 @@
+.color-block.sinque {
+   background-color: #0C0755;
+}
+
+.comp-content.sinque .comp-text {
+   color: var(--color-white);
+}
+
+.comp-content video {
+   height: 600px;
+}
+
+.comp-text.region-ml {
+   display: none;
+}
+
+/* custom breakpoint medium + a bit */
+@media (min-width: 800px) {
+   .comp-content video {
+      height: 700px;
+   }
+
+   .comp-content .comp-text.region-ml {
+      display: initial;
+      margin-top: 17rem;
+      padding-left: var(--space-small);
+      padding-right: var(--space-large);
+      width: 80%; /* prevents text going full width */
+   }
+
+   .comp-content {
+      max-width: 1320px;
+   }
+}
+
+/* region large */
+@media (min-width: 1100px) {
+   .comp-content video {
+      height: 900px;
+   }
+
+   .comp-content .comp-text.region-ml {
+      margin-top: 21rem;
+   }
+}
