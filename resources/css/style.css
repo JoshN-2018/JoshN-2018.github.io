@@ -720,7 +720,7 @@ footer .social-icons img {
 }
 
 .case .brand-assets .asset img {
-   max-width: 300px;
+   /* max-width: 300px; */
 }
 
 .case .left .asset:first-child {
