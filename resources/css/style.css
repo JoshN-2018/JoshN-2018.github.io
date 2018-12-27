@@ -1688,8 +1688,32 @@ footer .social-icons img {
    left: 50%;
 }
 
+.image-6040 img {
+   width: 100%;
+}
 
+.text-6040 {
+   margin-bottom: var(--space-petit);
+}
 
+.comp-6040 {
+   flex-direction: column;
+}
+
+@media (min-width: 720px) {
+   .comp-6040 {
+      flex-direction: row;
+      align-items: center;
+   }
+   .text-6040 {
+      width: 40%;
+      padding: var(--space-small);
+   }
+   .image-6040 {
+      width: 60%;
+      padding: var(--space-small);
+   }
+}
 
 
 
