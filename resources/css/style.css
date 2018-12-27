@@ -1671,6 +1671,24 @@ footer .social-icons img {
 
 
 
+/* Sinque page */
+   /* region small */
+
+.brand-block {
+   padding: var(--space-small) 0;
+}
+
+.brand-block img {
+   width: 90%;
+   max-width: 900px;
+   position: relative;
+   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+           transform: translateX(-50%);
+   left: 50%;
+}
+
+
 
 
 

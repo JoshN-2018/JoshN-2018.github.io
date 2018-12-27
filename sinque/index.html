@@ -31,6 +31,7 @@
                      <span class="h4 bold">Brand Identity</span>
                      <span class="h4 bold">Art Direction</span>
                      <span class="h4 bold">App Design</span>
+                     <span class="h4 bold">Strategy</span>
                   </div>
                </div>
 
@@ -39,43 +40,56 @@
          </div>
    </section>
 
-   <!-- Sinque-case -->
+   <!-- Intro section -->
 
-      <section class="case">
-         <div class="container">
+   <section class="intro case">
+      <div class="container">
 
-            <!-- Hero image and copy -->
-            <div class="case-image-shadow hero-img offset-an-props offsetAn4">
-               <img src="../resources/images/sin-image-hero@1x.jpg"
-                     srcset="../resources/images/sin-image-hero@2x.jpg 2640w,
-                            ../resources/images/sin-image-hero@1x.jpg 1320w"
-                     sizes="(min-width: 1320px) 1320px, 100vw"
-                     alt="Sinque homepage"/>
-            </div>
-
-            <div class="case-text">
-               <h2 class="h2">An identity with a scientific edge</h2>
-               <p class="body no-space">The core of the Sinque solution is their proprietary algorithm. This algorithm takes natural fluctuations into account to give an accurate picture of a persons health and their weight-loss trajectory. In developing the identity we took direct inspiration from this ground-breaking technology and the path to success it unlocks.
-               </p>
-            </div>
-            <hr>
-
+         <!-- Hero image and copy -->
+         <div class="case-image-shadow hero-img offset-an-props offsetAn4">
+            <img src="../resources/images/sin-image-hero@1x.jpg"
+                  srcset="../resources/images/sin-image-hero@2x.jpg 2640w,
+                         ../resources/images/sin-image-hero@1x.jpg 1320w"
+                  sizes="(min-width: 1320px) 1320px, 100vw"
+                  alt="Sinque homepage"/>
          </div>
 
-      <!-- Brand assets -->
+         <div class="case-text">
+            <h2 class="h2">An identity with a scientific edge</h2>
+            <p class="body no-space">The core of the Sinque solution is their proprietary algorithm. This algorithm takes natural fluctuations into account to give an accurate picture of a persons health and their weight-loss trajectory. In developing the identity we took direct inspiration from this ground-breaking technology and the path to success it unlocks.
+            </p>
+         </div>
 
-      <div class="case-image container">
-         <picture>
-            <source media="(min-width: 1100px)"
-               srcset="../resources/images/sin-brand-l.svg"/>
-            <source media="(min-width: 721px)"
-               srcset="../resources/images/sin-brand-m.svg"/>
-            <source media="(max-width: 720px)"
-               srcset="../resources/images/sin-brand-s.svg"/>
-            <img src="../resources/images/sin-brand-m.svg" alt="brand explainer"/>
-         </picture>
+      </div>
+   </section> <!-- end of section: Intro -->
+
+
+
+   <!-- Brand section -->
+
+   <section class="brand case">
+
+      <!-- Brand block -->
+      <div class="container">
+
+         <hr>
+         <div class="brand-block">
+            <picture>
+               <source media="(min-width: 1100px)"
+                  srcset="../resources/images/sin-brand-l.svg"/>
+               <source media="(min-width: 721px)"
+                  srcset="../resources/images/sin-brand-m.svg"/>
+               <source media="(max-width: 720px)"
+                  srcset="../resources/images/sin-brand-s.svg"/>
+               <img src="../resources/images/sin-brand-m.svg" alt="brand explainer"/>
+            </picture>
+         </div>
+         <hr>
+
       </div>
 
+
+      <!-- Brand assets -->
       <div class="brand-assets container container-flex">
 
          <div class="left">
@@ -118,6 +132,8 @@
          </div>
       </div>
       <hr>
+
+   </section> <!-- end of section brand -->
 
 {% include footer.html %}
 {% include page-end.html %}
