@@ -1,9 +1,19 @@
+   /* first block colours */
 .color-block.sinque {
    background-color: #0C0755;
 }
 
 .comp-content.sinque .comp-text {
    color: var(--color-white);
+}
+
+   /* second block colours */
+.color-block.sinque2 {
+   background-color: #FFDA00;
+}
+
+.comp-content .comp-text.sinque2 {
+   color: var(--color-black);
 }
 
 .comp-content video {
@@ -13,6 +23,7 @@
 .comp-text.region-ml {
    display: none;
 }
+
 
 /* custom breakpoint medium + a bit */
 @media (min-width: 800px) {
