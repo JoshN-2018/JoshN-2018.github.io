@@ -149,8 +149,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
    }
 
    function addProps() {
-     while (anMark[0]) {
-        anMark[0].classList.add('offset-an-props');      }
+      for (var i = 0; i < anMark.length; i++) {
+         anMark[i].classList.add("offset-an-props");
+      }
    }
 
    function removeProps() {
@@ -158,9 +159,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         anProps[0].classList.remove('offset-an-props');      }
    }
 
-   // addProps();
+   // call the above functions )
 
-   // Timings (call the above functions at set times)
+   addProps();
+      //functions called at set times
    setTimeout(function(){delay1(); }, 100);
    setTimeout(function(){delay2(); }, 200);
    setTimeout(function(){delay3(); }, 300);
