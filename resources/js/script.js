@@ -120,7 +120,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
    var anTwo = document.getElementsByClassName("offsetAn2");
    var anThree = document.getElementsByClassName("offsetAn3");
    var anFour = document.getElementsByClassName("offsetAn4");
-   var anMark = document.getElementsByClassName("an-marker");
 
 
    // Remove offsets from elements (to trigger animation)
@@ -148,17 +147,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
    }
 
-   function addProps() {
-     while (anMark[0]) {
-        anMark[0].classList.add('offset-an-props');      }
-   }
-
    function removeProps() {
      while (anProps[0]) {
         anProps[0].classList.remove('offset-an-props');      }
    }
-
-   // addProps();
 
    // Timings (call the above functions at set times)
    setTimeout(function(){delay1(); }, 100);
