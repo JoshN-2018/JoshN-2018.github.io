@@ -508,8 +508,8 @@ nav .logo img {
       margin-left: 8%;
    }
 
-      /* 3rd item reverse stagger */
-   .showcase-section .case-tile:nth-child(0n + 3) {
+      /* Every second item reverse stagger starting with the third item */
+   .showcase-section .case-tile:nth-child(2n + 3) {
       margin-top: calc(var(--space-index-m) * -1);
    }
 
