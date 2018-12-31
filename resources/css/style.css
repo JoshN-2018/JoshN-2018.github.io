@@ -748,54 +748,12 @@ footer .social-icons img {
    min-width: 230px;
 }
 
-
-   /* mobile first component (region small) */
-.color-block-comp {
-   position: relative;
-}
-
-.color-block-comp .mobile-first, .comp-content {
-   max-width: 2600px;
-   position: relative;
-   -webkit-transform: translateX(-50%);
-       -ms-transform: translateX(-50%);
-           transform: translateX(-50%);
-   left: 50%;
-}
-
-
-         /* fucking proud of myself! */
-.color-block-comp .color-block {
-   z-index: -1;
-   position: absolute;
-   top: 27.5%;
-   background-color: #fef200;
-   height: 45%;
-   width: 100%;
-}
-
-.case-text.region-s {
-   margin-top: 3.5rem;
-   margin-bottom: -1.75rem;
-}
-
-.color-block-comp .case-text.region-ml {
-   display: none;
-}
-
-.color-block-comp .mobile-first video {
-   height: 600px;
-   margin-top: var(--space-small);
-   width: 100%;
-}
-   /* end of: mobile first component */
-
-
 .case .case-image.crop {
    padding: 3rem 0;
    -webkit-transform: scale(1.4) translateX(11%);
        -ms-transform: scale(1.4) translateX(11%);
            transform: scale(1.4) translateX(11%);
+   margin-bottom: var(--space-small);
 }
 
 .case .form-vids {
@@ -829,7 +787,7 @@ footer .social-icons img {
 .case .oxy-illus .container-flex {
    flex-direction: row;
 }
-
+   /* end of: form comp */
 
 
    /* region medium */
@@ -884,40 +842,7 @@ footer .social-icons img {
       margin-top: var(--space-large);
       margin-bottom: var(--space-small);
    }
-}
 
-/* custom breakpoint */
-@media (min-width: 800px) { */
-   /* mobile first component (region medium) */
-   .color-block-comp {
-      margin-top: var(--space-medium);
-      margin-bottom: var(--space-medium);
-   }
-
-   .color-block-comp .case-text.region-ml {
-      display: initial;
-      margin-top: 17rem;
-      padding-right: 3.75rem;
-      padding-left: 3.75rem;
-   }
-
-   .color-block-comp .h2 {
-      margin-bottom: var(--space-tiny);
-   }
-
-   .case-text.region-s {
-      display: none;
-   }
-   .color-block-comp .mobile-first video {
-      height: 700px;
-      width: initial;
-      margin-left: var(--indent-2-col);
-   }
-}
-/* end of: mobile first component */
-
-/* resume standard break-points */
-@media (min-width: 720px) {
    .case .case-image.crop {
       -webkit-transform: scale(1) translateX(0%);
           -ms-transform: scale(1) translateX(0%);
@@ -1001,66 +926,12 @@ footer .social-icons img {
        margin: var(--space-medium) 0;
    }
 
-   /* mobile first component (region large) */
-   .color-block-comp {
-      margin-top: var(--space-large);
-   }
-
-   .color-block-comp .case-text.region-ml {
-      margin-top: 22rem;
-      padding-right: 7rem;
-   }
-
-   .color-block-comp .h2 {
-      margin-bottom: var(--space-tiny);
-   }
-
-   .case .case-text.region-s {
-      display: none;
-   }
-   .color-block-comp .mobile-first video {
-      height: 900px;
-      margin-left: var(--indent-3-col);
-   }
-   /* end of: mobile first component */
-
    /* form comp */
    .case .form-vid-cont {
       margin-top: 9.6%;
    }
 }
 
-/* mobile first component extra adjustments */
-@media (min-width: 1320px) {
-   .mobile-first {
-      padding: 0 100px;
-   }
-}
-
-@media (min-width: 1500px) {
-   .mobile-first {
-      padding: 0 200px;
-   }
-}
-
-@media (min-width: 1945px) {
-   .mobile-first {
-      padding: 0 300px;
-   }
-}
-
-@media (min-width: 2200px) {
-   .mobile-first {
-      padding: 0 450px;
-   }
-}
-
-@media (min-width: 2400px) {
-   .mobile-first {
-      padding: 0 600px;
-   }
-}
-/* end of: mobile first component extra adjustments */
 
 
 
@@ -1216,42 +1087,13 @@ footer .social-icons img {
    justify-content: center;
 }
 
-.case.dv .color-block-comp img {
-   max-width: 75vw;
-}
 
-/* blue print */
-.dv-blue img {
-   position: relative;
-   -webkit-transform: translateX(-50%);
-       -ms-transform: translateX(-50%);
-           transform: translateX(-50%);
-   left: 50%;
-}
-
-.color-block.dv-blue {
-   height: 90%;
-   top: 5%;
-   background-color: #FFFED9;
-}
-/* end of blue print */
 
 .case.dv .vid-scale {
    margin-bottom: var(--space-medium);
    -webkit-transform: scale(1.1);
        -ms-transform: scale(1.1);
            transform: scale(1.1);
-}
-
-.color-block.dv-mobile {
-   background-color: #FFE400;
-   height: 45% !important;
-   top: 19.5%;
-}
-
-/* off setting color-block dv-mobile extra space */
-.color-block-comp.dv-mobile {
-   margin: -2rem 0 -2rem 0; /* = var(--space-small) & var(--space-small) */
 }
 
 .eyes-text.case-text {
@@ -1299,15 +1141,6 @@ footer .social-icons img {
       padding: 0 var(--space-small);
    }
 
-   .case.dv .color-block-comp img {
-      max-width: 65vw;
-   }
-
-   /* off setting color-block dv-mobile extra space */
-   .color-block-comp.dv-mobile {
-      margin: -4.5rem 0 -4.5rem 0; /* = var(--space-large) & var(--space-large) */
-   }
-
    .case-vid {
       padding: 1rem;
       padding-top: 0;
@@ -1317,28 +1150,6 @@ footer .social-icons img {
 
    /* region large */
 @media (min-width: 1100px) {
-   /* blue print */
-   .dv-blue img {
-      max-width: 1300px !important;
-   }
-      /* correcting vertical offset */
-   .color-block-comp.dv-blue {
-      margin-top: -1rem;
-   }
-
-   .color-block-comp.dv-mobile {
-      margin-top: -10rem 0;
-   }
-   /* end of blue print */
-
-   .case.dv .color-block-comp img {
-      max-width: 1150px;
-   }
-
-      /* off setting color-block dv-mobile extra space */
-   .color-block-comp.dv-mobile {
-      margin: -4.5rem 0 -7rem 0; /* = var(--space-large) & var(--space-larger) */
-   }
 
    .case-vid-wrapper {
       width: 100%; /* this is an unecessary declaration but its nice semantically to see theres a wrapper at work */
@@ -1732,26 +1543,38 @@ footer .social-icons img {
 
 
 
-
+/* ///////////////////////////////////////////////////// */
 
 /* Color-block comp re-factored code */
 
-/* first block colours */
-.color-block.sinque {
-background-color: #0C0755;
+/* ///////////////////////////////////////////////////// */
+
+/* region small */
+
+.color-block-comp {
+   position: relative;
+}
+         /* Set block to be under content */
+.color-block-comp .color-block {
+   z-index: -1;
+   position: absolute;
+   top: 27.5%;
+   background-color: #fef200;
+   height: 45%;
+   width: 100%;
 }
 
-.comp-content.sinque .comp-text {
-color: var(--color-white);
+.color-block-comp .comp-content {
+   max-width: 1320px;
+   position: relative;
+   -webkit-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+           transform: translateX(-50%);
+   left: 50%;
 }
 
-/* second block colours */
-.color-block.sinque2 {
-background-color: #FFDA00;
-}
-
-.comp-content .comp-text.sinque2 {
-color: var(--color-black);
+.comp-text.region-ml {
+   display: none;
 }
 
 .comp-content video {
@@ -1762,12 +1585,18 @@ height: 600px;
 display: none;
 }
 
-
-.color-block-comp.sinque {
+.color-block-comp {
 margin-top: var(--space-medium);
 margin-bottom: 0;
 }
 
+
+/* region medium */
+@media (min-width: 720px) {
+   .case-text.region-s {
+      width: 100%;
+   }
+}
 
 /* custom breakpoint medium + a bit */
 @media (min-width: 900px) {
@@ -1782,8 +1611,16 @@ margin-bottom: 0;
       padding-right: var(--space-medium);
    }
 
-   .comp-content {
-      max-width: 1100px; /*prevents text running too long — the resulting comp is centered*/
+   .case-text.region-s {
+      display: none;
+   }
+
+   .color-block-comp .h2 {
+      margin-bottom: var(--space-tiny);
+   }
+
+   .comp-content.oxy { /*there is a glitch with the sinque videos rendering wider than they are — all content should require this*/
+      padding: 0 var(--space-small);
    }
 
    .color-block-comp {
@@ -1808,8 +1645,121 @@ margin-bottom: 0;
       margin-top: var(--space-larger);
       margin-bottom: calc(var(--space-medium)*-1); /* allowing for xtra space from off setting weirdly only needs it at larger sizes */
    }
+
+   .comp-content { /*there is a glitch with the sinque videos rendering wider than they are — all content should require this*/
+      padding: 0 var(--space-medium);
+   }
 }
+
+/* Over-rides */
+   /* first block colours */
+.color-block.sinque {
+background-color: #0C0755;
+}
+
+.comp-content.sinque .comp-text {
+color: var(--color-white);
+}
+
+   /* second block colours */
+.color-block.sinque2 {
+background-color: #FFDA00;
+}
+
+.comp-content .comp-text.sinque2 {
+color: var(--color-black);
+}
+
+.case.dv .color-block-comp img {
+   max-width: 75vw;
+}
+
+/* blue print */
+.dv-blue img {
+   position: relative;
+   -webkit-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+           transform: translateX(-50%);
+   left: 50%;
+}
+
+.color-block.dv-blue {
+   height: 90%;
+   top: 5%;
+   background-color: #FFFED9;
+}
+
+@media (min-width: 1100px) {
+   /* blue print */
+   .dv-blue img {
+      max-width: 1300px !important;
+   }
+      /* correcting vertical offset */
+   .color-block-comp.dv-blue {
+      margin-top: -1rem;
+   }
+
+   .color-block-comp.dv-mobile {
+      margin-top: -10rem 0;
+   }
+}
+/* end of blue print */
+
+
+
+/* dv-mobile */
+.color-block.dv-mobile {
+   background-color: #FFE400;
+   height: 45% !important;
+   top: 19.5%;
+}
+
+/* off setting color-block dv-mobile extra space */
+.color-block-comp.dv-mobile {
+   margin: -2rem 0 -2rem 0; /* = var(--space-small) & var(--space-small) */
+}
+
+@media (min-width: 720px) {
+   /* off setting color-block dv-mobile extra space */
+   .color-block-comp.dv-mobile {
+      margin: -4.5rem 0 -4.5rem 0; /* = var(--space-large) & var(--space-large) */
+   }
+   .case.dv .color-block-comp img {
+      max-width: 65vw;
+   }
+}
+
+@media (min-width: 1100px) {
+   .case.dv .color-block-comp img {
+      max-width: 1150px;
+   }
+
+      /* off setting color-block dv-mobile extra space */
+   .color-block-comp.dv-mobile {
+      margin: -4.5rem 0 -7rem 0; /* = var(--space-large) & var(--space-larger) */
+   }
+}
+
+
+/* ///////////////////////////////////////////////////// */
+
 /* end of: Color-block comp re-factored code */
+
+/* ///////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
