@@ -68,6 +68,6 @@
 
    .color-block-comp.sinque {
       margin-top: var(--space-larger);
-      margin-bottom: calc(var(--space-medium)*-1);
+      margin-bottom: calc(var(--space-medium)*-1); /* allowing for xtra space from off setting weirdly only needs it at larger sizes */
    }
 }
