@@ -1685,6 +1685,10 @@ color: var(--color-black);
    .comp-content.sinque2 .comp-text.region-ml {
       margin-top: 20rem;
    }
+
+   .color-block-comp.sinque2 {
+      margin-bottom: var(--space-medium);
+   }
 }
 
 /* blue print */
