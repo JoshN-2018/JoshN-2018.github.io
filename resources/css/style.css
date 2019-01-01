@@ -1688,6 +1688,10 @@ color: var(--color-black);
    top: 5%;
    background-color: #FFFED9;
 }
+   /*  over riding rule created for standard CBCs*/
+.color-block-comp.dv-blue {
+   margin-top: 0;
+}
 
 @media (min-width: 1100px) {
    /* blue print */
@@ -1696,11 +1700,11 @@ color: var(--color-black);
    }
       /* correcting vertical offset */
    .color-block-comp.dv-blue {
-      margin-top: -1rem;
+      margin-top: -2rem;
    }
 
-   .color-block-comp.dv-mobile {
-      margin-top: -10rem 0;
+   .color-block-comp.dv-blue {
+      margin-bottom: 0;
    }
 }
 /* end of blue print */
