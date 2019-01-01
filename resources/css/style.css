@@ -887,8 +887,13 @@ footer .social-icons img {
       min-width: 400px;
    }
 
-   .case .brand-assets {
-      /* extra padding on the right side because the images over-run their container */
+   .case .brand-assets.sinque {
+      /* for Sinque: extra padding on the right side because the images over-run their container */
+      padding: 0 16rem 0 var(--indent-3-col);
+   }
+
+   .case .brand-assets.oxy {
+      /* for Oxy: extra padding on the right side because the images over-run their container */
       padding: 0 14rem 0 var(--indent-2-col);
    }
 
@@ -1134,6 +1139,10 @@ footer .social-icons img {
    .eyes-cont {
       flex-direction: row;
       align-items: center;
+   }
+
+   .eyes-text.case-text {
+      margin-bottom: 0;
    }
 
    .eyes {
