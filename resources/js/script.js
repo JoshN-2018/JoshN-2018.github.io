@@ -197,13 +197,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
    // call the above functions
 
-   addProps();
+   
    addAn1();
    addAn2();
    addAn3();
    addAn4();
 
       //functions called at set times
+
+   setTimeout(function(){addProps(); }, 50);
    setTimeout(function(){delay1(); }, 100);
    setTimeout(function(){delay2(); }, 200);
    setTimeout(function(){delay3(); }, 300);
