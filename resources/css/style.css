@@ -972,8 +972,16 @@ footer .social-icons img {
    flex-direction: column;
 }
 
+.case .vd-mark {
+   padding: 0 0 !important;
+}
+
 .case .elk-assets .h4 {
    margin-bottom: var(--space-small);
+}
+
+.vd-mark .h4:first-child {
+   padding-left: var(--space-small);
 }
 
 .case .elk-assets .elk-mark .arrow {
@@ -1026,12 +1034,20 @@ footer .social-icons img {
       flex-direction: column;
    }
 
+   .brand-assets .sheild {
+      margin-top: 1rem;
+   }
+
    .case .elk-assets .elk-mark .arrow {
       padding: initial;
    }
 
    .case .elk-assets .elk-mark {
       padding: 0 var(--indent-1-col);
+   }
+
+   .case .elk-assets .vd-mark:first-child {
+      margin-bottom: 0;
    }
 
    .case .elk-mark img {
@@ -1044,6 +1060,10 @@ footer .social-icons img {
 
    .case .elk-assets .h4 {
       margin-bottom: var(--space-medium);
+   }
+
+   .case .vd-assets .h4 {
+      margin-bottom: var(--space-tiny) !important;
    }
 
    .case .elk-assets {
@@ -1068,6 +1088,10 @@ footer .social-icons img {
       height: 14rem;
    }
 
+   .brand-assets .sheild {
+      margin-top: 1.5rem;
+   }
+
    .case .elk-mark:last-child img {
       height: 10rem;
    }
@@ -1082,6 +1106,9 @@ footer .social-icons img {
 
    .case.details img {
       margin-bottom: var(--space-large);
+   }
+   .case .vd-mark {
+      padding-left: 5rem !important;
    }
 }
 
