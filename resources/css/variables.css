@@ -93,7 +93,40 @@ height: 300px;
    }
 }
 
+/* pre-sets the height to prevent content jumping when animation plays */
+.space-save {
+   min-height: 176px;
+}
 
+@media (min-width: 375px) {
+   .space-save {
+      min-height: 176px;
+   }
+}
+
+@media (min-width: 412px) {
+   .space-save {
+      min-height: 190px;
+   }
+}
+
+@media (min-width: 720px) {
+   .space-save {
+      min-height: 253px;
+   }
+}
+
+@media (min-width: 1100px) {
+   .space-save {
+      min-height: 290px;
+   }
+}
+
+@media (min-width: 1440px) {
+   .space-save {
+      min-height: 417px;
+   }
+}
 /* end of: Global Styles */
 
 
