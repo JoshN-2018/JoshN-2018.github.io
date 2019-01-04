@@ -750,9 +750,9 @@ footer .social-icons img {
 
 .case .case-image.crop {
    padding: 3rem 0;
-   -webkit-transform: scale(1.4) translateX(11%);
-       -ms-transform: scale(1.4) translateX(11%);
-           transform: scale(1.4) translateX(11%);
+   -webkit-transform: scale(1.2) translateX(5%);
+       -ms-transform: scale(1.2) translateX(5%);
+           transform: scale(1.2) translateX(5%);
    margin-bottom: var(--space-small);
 }
 
