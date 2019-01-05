@@ -323,7 +323,6 @@ nav .logo img {
    }
 }
 
-
    /* ensuring flexibility for shorter screens without compromising taller display output */
 @media (min-width: 1100px) and (max-height: 991px) {
    .hero-section .hero-content {
