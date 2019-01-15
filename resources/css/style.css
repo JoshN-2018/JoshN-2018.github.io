@@ -272,6 +272,13 @@ nav .logo img {
    }
 }
 
+   /* disabling for contact page */
+@media (min-width: 720px) and (max-height: 991px) {
+   .hero-section .contact.container-flex {
+      height: initial; /* note this is compressing content fix padding to achieve this look*/
+   }
+}
+
    /* region medium */
 @media (min-width: 720px) {
    .hero-section .container.container-flex {
@@ -284,6 +291,11 @@ nav .logo img {
       padding-bottom: var(--space-large);
       padding-right: var(--indent-1-col);
       margin: auto 0;
+   }
+   /* fix for contact page */
+   .hero-section .hero-content.contact {
+      padding-top: var(--space-large);
+      padding-bottom: var(--space-medium);
    }
 
    .hero-section .indicators {
@@ -312,6 +324,12 @@ nav .logo img {
       padding-bottom: 10rem;
       padding-left: var(--indent-2-col);
       padding-right: var(--indent-2-col);
+   }
+
+   /* fix for contact page */
+   .hero-section .hero-content.contact {
+      padding-top: var(--space-large);
+      padding-bottom: var(--space-medium);
    }
 
    .hero-text {
@@ -1477,6 +1495,11 @@ footer .social-icons img {
 @media (min-width: 1100px) {
    .contact .hero-text {
       width: 52%;
+   }
+
+   .contact-divide {
+      padding-left: var(--indent-2-col);
+      padding-right: var(--indent-2-col);
    }
 
    .skills-detail .body {
