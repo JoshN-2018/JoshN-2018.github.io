@@ -7,4 +7,4 @@ var animation = lottie.loadAnimation({
    autoplay: true,
    path: './resources/js/data.json'
 })
-//lottie.setSpeed(2); // Lottie plays at 60fps (animation was set up at 30fps)
+lottie.setSpeed(0.8); // Lottie plays at 60fps (animation was set up at 30fps)
