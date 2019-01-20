@@ -800,6 +800,12 @@ footer .social-icons img {
 .cta-block {
    margin: var(--space-medium) 0;
 }
+
+.cta-block .next-project-comp {
+   justify-content: center;
+   margin-top: var(--space-small);
+}
+
    /* form comp */
 .case .oxy-form {
    flex-direction: column;
@@ -878,6 +884,11 @@ footer .social-icons img {
       margin: var(--space-large) 0;
    }
 
+   .cta-block .next-project-comp {
+      margin-top: var(--space-small);
+      margin-bottom: var(--space-large);
+   }
+
    .case .left .asset:last-child {
       margin-bottom: 0;
    }
@@ -954,6 +965,15 @@ footer .social-icons img {
 
    .case hr {
        margin: var(--space-medium) 0;
+   }
+
+   .cta-block {
+      margin-top: var(--space-large);
+   }
+
+   .cta-block .next-project-comp {
+      margin-top: var(--space-medium);
+      margin-bottom: var(--space-large);
    }
 
    /* form comp */
@@ -1268,6 +1288,11 @@ footer .social-icons img {
 
 .exp-comp {
    margin-bottom: 3.25rem;
+}
+
+   /* removing margin on last experiments component */
+.exp .exp-comp:last-child {
+   margin-bottom: var(--space-small);
 }
 
 /* Experiments */
