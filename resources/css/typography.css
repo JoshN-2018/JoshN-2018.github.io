@@ -10,7 +10,7 @@ strong,
   font-weight: 700;
 }
 
-.semi-bold {
+.semi-bold, b {
    font-weight: 600;
 }
 
