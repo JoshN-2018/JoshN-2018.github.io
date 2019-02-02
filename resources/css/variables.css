@@ -41,6 +41,18 @@
 .shadow {
    box-shadow: var(--shadow-soft);
 }
+
+   /* Keyboard navigation */
+a:focus {
+   outline: none;
+   text-decoration: underline;
+}
+
+a:hover {
+   outline: none;
+   text-decoration: none;
+}
+
    /* ensures video fills available space */
 .video-fill {
    width: 100% !important;
