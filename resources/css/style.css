@@ -10,8 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-
-
 /* Menu-overlay */
 
    /* region small-ONLY */
@@ -498,6 +496,12 @@ nav .logo img {
 }
 
 .case-tile img:hover {
+   -webkit-transform: scale(1.03);
+       -ms-transform: scale(1.03);
+           transform: scale(1.03);
+}
+
+.case-tile:focus-within img {
    -webkit-transform: scale(1.03);
        -ms-transform: scale(1.03);
            transform: scale(1.03);
