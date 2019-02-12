@@ -42,6 +42,10 @@
    box-shadow: var(--shadow-soft);
 }
 
+.light-border {
+   border: 1px solid var(--color-v-light-grey);
+}
+
    /* Keyboard navigation */
 a:focus {
    outline: none;
