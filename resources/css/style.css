@@ -294,7 +294,6 @@ nav .logo img {
    .hero-section .hero-content.contact {
       padding-top: var(--space-large);
       padding-bottom: var(--space-medium);
-      /* height: 100vh; */
    }
 
    .hero-section .indicators {
